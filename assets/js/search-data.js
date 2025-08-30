@@ -143,17 +143,6 @@ ninja.data = [{
             window.location.href = "/blog/2024/code-diff/";
           
         },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/advanced-images/";
-          
-        },
       },{id: "post-a-post-with-vega-lite",
         
           title: "a post with vega lite",
@@ -163,17 +152,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/vega-lite/";
-          
-        },
-      },{id: "post-a-post-with-geojson",
-        
-          title: "a post with geojson",
-        
-        description: "this is what included geojson code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/geojson-map/";
           
         },
       },{id: "post-displaying-external-posts-on-your-al-folio-blog",
