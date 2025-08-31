@@ -97,6 +97,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-learning-anatomy",
+          title: 'Learning Anatomy',
+          description: "a project where I post my progress learning generalized vertebrate anatomy",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/learning-anatomy/";
             },},{
         id: 'social-email',
         title: 'email',
