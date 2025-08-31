@@ -6,9 +6,10 @@ description: Blog introduction and greeting and who the hell am I
 tags:
   - paleontology
   - introductory
-thumbnail: /assets/img/1.jpg
+thumbnail: /assets/img/film-field.jpg
 categories: sample-posts
 toc: false
+featured: true
 ---
 # Welcome!
 
