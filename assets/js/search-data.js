@@ -30,11 +30,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-testing-out-the-format",
+        },{id: "post-launching-off-the-fossil-record",
         
-          title: "testing out the format",
+          title: "Launching Off the Fossil Record!",
         
-        description: "Hello blog!",
+        description: "Blog introduction and greeting and who the hell am I",
         section: "Posts",
         handler: () => {
           
