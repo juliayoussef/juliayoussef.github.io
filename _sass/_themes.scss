@@ -131,6 +131,22 @@ html[data-theme="dark"] {
   }
 }
 
+/* ---------- Custom: social icon light/dark swap ---------- */
+/* default (light/system) */
+.social-custom .icon-dark { display: none; }
+.social-custom .icon-light,
+.social-custom .icon-dark { height: 24px; width: 24px; }
+
+/* when site theme is dark (the al-folio toggle sets this) */
+html[data-theme="dark"] .social-custom .icon-light { display: none; }
+html[data-theme="dark"] .social-custom .icon-dark  { display: inline; }
+
+/* optional: if no data-theme yet on first paint, follow OS preference */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) .social-custom .icon-light { display: none; }
+  html:not([data-theme]) .social-custom .icon-dark  { display: inline; }
+}
+
 /* ---------- Toggle state helpers (unchanged logic) ---------- */
 html[data-theme-setting="dark"] {
   #light-toggle-system {
