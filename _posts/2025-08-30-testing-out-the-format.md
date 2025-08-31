@@ -1,14 +1,21 @@
 ---
 layout: post
-title: "testing out the format"
-date: 2025-08-30 10:00:00 -0500
-description: "Hello blog!"
-tags: [paleontology, paleoart, introductory]  # optional
-thumbnail: /assets/img/1.jpg  # optional; image for the card on /blog
+title: Launching Off the Fossil Record!
+date: '2025-08-31 10:00:00 -0500'
+description: Blog introduction and greeting and who the hell am I
+tags:
+  - paleontology
+  - introductory
+thumbnail: /assets/img/1.jpg
 categories: sample-posts
-toc: false                   # or true for a sidebar table of contents
+toc: false
 ---
+# Welcome!
 
-Working with JekyllPad
+Hi! My name is Julia Youssef, and I must say, working with the editor I am currently using might be the death of me, so excuse any typos in these first few posts.
 
-I cannot say it is terrible - rather, it is quite convenient to be able to save directly and deploy the site, to type content, to post content, to see word count and characters and an estimate of reading time and all such things, with a nice UI.
+I am a recent graduate from the University of Chicago, where I studied geosciences and nearly completed most of the astrophysics major before realizing I prefer working with the deep past underground than in the skies (though, I am often asked if I work with "space dinosaurs..."). I also spent a lot of my spare time (and electives) working on my art skills and cultivating my interests in philosophy of science as well as religion in classical antiquity. Now, I am still doing research – in this awkward space between undergrad and a hopeful PhD – and trying to grapple with the role paleontology has in our daily lives, society, and, well, my own academic trajectory. Hence, ...I wanted to set up this site, write about my thoughts and relationship to UChicago, geosciences, astrophysics, biology, and art.
+
+If you are curious about topics like paleoart, how we reconstruct ancient organisms, or how we engage with deep time, you'll find posts here. Or, if you're interested in bigger questions – how we define evolutionary "success," where we fit on the tree of life, and how we feel about those relationships – that's here, too. And since I wasn't born into a family of academics, I'll write about how I feel about higher education, how I balance art, science, and identity, and how I try to move forward.
+
+Oh - and occasionally I'll air my grievances about obscure papers or fawn over the newest discoveries on niche clades (with a special fondness for _Nyctosauridae_ and _Anurognathidae_, both pterosaurs, and some mammalian lineages).
