@@ -131,8 +131,6 @@ html[data-theme="dark"] {
   }
 }
 
-.social-img { width:24px; height:24px; vertical-align:middle; }
-
 /* ---------- Toggle state helpers (unchanged logic) ---------- */
 html[data-theme-setting="dark"] {
   #light-toggle-system {
@@ -165,4 +163,13 @@ html[data-theme-setting="light"] {
     padding-top: 12px;
     display: block;
   }
+}
+
+/* ---------- Custom overrides ---------- */
+.social-img {
+  height: 1.5em;       /* scales like FA icons */
+  width: auto;
+  display: inline-block;
+  vertical-align: -0.125em; /* matches FA's vertical nudge */
+  fill: currentColor;  /* if you later swap to SVG */
 }
