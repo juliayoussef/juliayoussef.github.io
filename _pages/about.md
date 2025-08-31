@@ -6,9 +6,9 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
+  image_circular: false
  
-selected_papers: true
+selected_papers: false
 social: true
 announcements:
   enabled: true
