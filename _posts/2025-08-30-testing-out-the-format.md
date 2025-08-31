@@ -20,3 +20,16 @@ I am a recent graduate from the University of Chicago, where I studied geoscienc
 If you are curious about topics like paleoart, how we reconstruct ancient organisms, or how we engage with deep time, you'll find posts here. Or, if you're interested in bigger questions – how we define evolutionary "success," where we fit on the tree of life, and how we feel about those relationships – that's here, too. And since I wasn't born into a family of academics, I'll write about how I feel about higher education, how I balance art, science, and identity, and how I try to move forward.
 
 Oh - and occasionally I'll air my grievances about obscure papers or fawn over the newest discoveries on niche clades (with a special fondness for _Nyctosauridae_ and _Anurognathidae_, both pterosaurs, and some mammalian lineages).
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/film-field.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/talking-field.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Me in Wymonig with Professor Sereno's Dinosaur Science course!
+</div>
+
