@@ -97,24 +97,13 @@
     {% when 'zotero_username' %}
       <a href="https://www.zotero.org/{{ social[1] }}" title="Zotero"><i class="ai ai-zotero"></i></a>
     {% else %}
-      <a href="{{ social[1].url }}" title="{{ social[1].title }}" class="social-custom">
-        {% if social[1].logo_light or social[1].logo_dark %}
-          {% assign llight = social[1].logo_light | default: social[1].logo %}
-          {% assign ddark  = social[1].logo_dark  | default: social[1].logo %}
-          <img
-            src="{% if llight contains '://' %}{{ llight }}{% else %}{{ llight | relative_url }}{% endif %}"
-            alt="{{ social[1].title }}" class="icon-light" height="24" width="24">
-          <img
-            src="{% if ddark contains '://' %}{{ ddark }}{% else %}{{ ddark | relative_url }}{% endif %}"
-            alt="{{ social[1].title }}" class="icon-dark" height="24" width="24">
-        {% else %}
-          {% assign file_ext = social[1].logo | split: '.' | last %}
-          {% if file_ext == 'svg' %}
-            <svg class="icon-light"><image xlink:href="{{ social[1].logo | relative_url }}" /></svg>
-          {% else %}
-            <img src="{{ social[1].logo | relative_url }}" alt="{{ social[1].title }}" height="24" width="24">
-          {% endif %}
-        {% endif %}
+      <a href="{{ social[1].url }}" title="{{ social[1].title }}">
+        {% assign llight = social[1].logo_light | default: social[1].logo %}
+        {% assign ddark  = social[1].logo_dark  | default: social[1].logo %}
+        <img src="{% if llight contains '://' %}{{ llight }}{% else %}{{ llight | relative_url }}{% endif %}"
+             alt="{{ social[1].title }}" class="only-light social-img" width="24" height="24">
+        <img src="{% if ddark contains '://' %}{{ ddark }}{% else %}{{ ddark | relative_url }}{% endif %}"
+             alt="{{ social[1].title }}" class="only-dark social-img" width="24" height="24">
       </a>
   {% endcase %}
 {% endfor %}
