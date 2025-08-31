@@ -32,10 +32,11 @@
       "endDate": "Present",
       "summary": "Developing quantitative frameworks linking mammalian molar morphology to herbivorous diet across extant and fossil taxa.",
       "highlights": [
-        "Built a standardized dataset of herbivore diets from primary literature.",
-        "Applied PCA and clustering analyses to identify grazer–browser divisions and specialist guilds.",
-        "Integrated 3D molar metrics into Bayesian models to predict diet in fossil mammals."
-      ]
+        "Built a standardized dataset of herbivore diets by assigning ranked importances to plant food items from primary literature.",
+        "Expanded methods from carnivore dietary ecology to herbivores, integrating keywords, rankings, and ecological guilds.",
+        "Applied PCA and clustering analyses to identify grazer–browser divisions, specialist guilds (e.g. frugivores), and dietary subniches.",
+        "Incorporated 3D molar surface metrics (e.g., OPCr, RFI, DNE) into Bayesian models to predict diet from morphology.",
+        "Developed a probabilistic framework to infer dietary niches in extinct mammals from fossil dentition."]
     },
     {
       "name": "University of Chicago — Honors Thesis",
@@ -46,9 +47,11 @@
       "endDate": "2025-06-07",
       "summary": "Reanalysis of pterosaur phylogenies using parsimony and Bayesian FBD processes.",
       "highlights": [
-        "Compared parsimony- and Bayesian-based phylogenies from published datasets.",
-        "Evaluated stratigraphic congruence and visualized uncertainty using R and Python.",
-        "Worked with RevBayes, TNT, Mesquite, and R phylogenetics packages."
+        "Performed an informal literature review of pterosaur crest morphology and phylogeny, particularly that of problem clades (anurognathidae), and quantitatively analyzed public morphological datasets.",
+        "Parsimony- and Bayesian-based trees were produced from these same datasets and compared with the goal of finding a consensus result amidst consistently competing hypotheses.",
+        "Evaluated stratigraphic congruence (e.g., GER, MSM*, RCI) and visualized uncertainty.",
+        "Gained experience in comparative cladistics and with popular paleontology packages like ape, strap, phytools, as well as programs like RevBayes, PAUP, TNT, and Mesquite.",
+        "Integrated data cleaning, version control, and figure generation (Python/R)."
       ]
     },
     {
@@ -60,8 +63,9 @@
       "endDate": "Present",
       "summary": "Morphometric and character coding for Paleozoic trilobite disparity studies.",
       "highlights": [
-        "Cleaned and photographed mm-scale trilobite specimens.",
-        "Coded discrete morphological traits for macroevolutionary datasets."
+        "Cleaned, stained, and photographed dozens of mm-scale eodiscid trilobites.",
+        "Measured and coded discrete morphological traits.",
+        "Contributed to macroevolutionary datasets for use in biostratigraphy."
       ]
     },
     {
@@ -72,9 +76,11 @@
       "endDate": "2024-12-15",
       "summary": "Supported fossil preparation, collections work, and outreach in vertebrate paleontology, with additional field experience.",
       "highlights": [
-        "Prepared and stabilized vertebrate fossil specimens.",
-        "Participated in fieldwork in the Morrison and Cloverly formations.",
-        "Created paleoart and illustrations for education and outreach."
+        "Prepared, stabilized vertebrate fossil specimens using established lab techniques.",
+          "Participated in fieldwork to Morrison, Cloverly formations at base of Bighorn Mountains, assisting with excavation, handling, and documentation of fossil material.",
+          "Contributed to collections care, cataloging, and rehousing of specimens.",
+          "Created paleoart and illustrations to support science communication and education, in addition to creating visualizations, diagrams, and casts for display, outreach, and donor gifts.",
+          "Engaged with the public during lab tours, presenting fossil preparation methods and evolutionary context."
       ]
     },
     {
@@ -86,8 +92,8 @@
       "endDate": "2025-06-07",
       "summary": "Community leadership and student support.",
       "highlights": [
-        "Mentored 90+ residents and coordinated programming.",
-        "Mediated conflicts and supported inclusive community-building."
+        "Mentored 90+ residents; coordinated programming and crisis response.",
+        "Mediated conflicts and facilitated an inclusive residential environment."
       ]
     },
     {
@@ -98,9 +104,11 @@
       "endDate": "2022-12-31",
       "summary": "Contributed to computational cosmology research with a focus on CMB datasets, applying statistical and machine learning methods in an international collaboration.",
       "highlights": [
-        "Applied simulation-based inference to study galaxy clusters and the SZ effect in the cosmic microwave background.",
-        "Used regression and classification ML techniques in Python (numpy, pandas, keras, matplotlib).",
-        "Integrated heterogeneous cosmology datasets with statistical astroinformatics approaches."
+        "Utilized simulation-based-inference to analyze the relationships between cosmological constraints, dark matter halos in galaxy clusters, and the observed SZ effect in the cosmic microwave background.",
+        "Used regression and classification machine learning techniques in Python in applications to cosmology and astrophysics, particularly gaining proficiency in GitHub and numpy, pandas, scipy, astropy, matplotlib, keras packages.",
+        "Used statistical astroinformatics approaches to integrate heterogeneous cosmology datasets for joint analysis.",
+        "Participated in presentation of research to members of Deep Skies and Fermilab.",
+        "Adapted experience with Bayesian and computational pipelines to later paleobiological modeling of evolutionary systems."
       ]
     }
   ],
@@ -212,9 +220,9 @@
       "endDate": "2021-05-01",
       "summary": "Funded independent fellowship project integrating paleontological research with scientific art.",
       "highlights": [
-        "Drafted and proposed an independent research project on theropod dinosaurs.",
-        "Researched phylogeny, ecology, and anatomy of multiple theropod species.",
-        "Produced paleoart and illustrated pages for science communication."
+        "Drafted and proposed an independent research project on theropod dinosaurs, including budgeting and planning.",
+        "Researched phylogeny, ecology, appearance, and anatomy of multiple theropod species.",
+        "Produced paleoart and a series of illustrated, data-informed pages for science communication."
       ]
     }
   ],
