@@ -166,10 +166,27 @@ html[data-theme-setting="light"] {
 }
 
 /* ---------- Custom overrides ---------- */
-.social-img {
-  height: 1.5em;       /* scales like FA icons */
-  width: auto;
-  display: inline-block;
-  vertical-align: -0.125em; /* matches FA's vertical nudge */
-  fill: currentColor;  /* if you later swap to SVG */
+/* Make the social row baseline-proof */
+.social {
+  display: flex;            /* row of icons */
+  flex-wrap: wrap;
+  gap: .75rem;              /* space between icons */
+  align-items: center;      /* vertical centering fixes baseline drift */
 }
+
+/* Make each icon cell a centered box like FA glyphs */
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;           /* no extra leading */
+  font-size: 1.5rem;        /* FA icon size — keeps everything in sync */
+}
+
+/* Your custom image icons (both light & dark) */
+.social-img {
+  height: 1em;              /* scale with font-size like FA */
+  width: auto;              /* keep aspect ratio */
+  display: block;           /* avoid inline baseline quirks */
+}
+
