@@ -52,7 +52,7 @@ spotify_id: _arget_ # your spotify id
 # zotero_username: # your zotero username
 
 personal_art_hub:
-  logo: assets/img/art_logo.png
-  title: fourthwall
+  logo_light: assets/img/art-logo-light.png
+  logo_dark:  assets/img/art-logo-dark.png
+  title: Carrd
   url: https://art-of-arget.carrd.co/
-  
