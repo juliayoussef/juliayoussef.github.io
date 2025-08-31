@@ -98,16 +98,32 @@
       <a href="https://www.zotero.org/{{ social[1] }}" title="Zotero"><i class="ai ai-zotero"></i></a>
     {% else %}
       <a href="{{ social[1].url }}" title="{{ social[1].title }}">
-        {% assign file_ext = social[1].logo | split: '.' | last %}
-        {% if file_ext == 'svg' %}
-          <svg>
-            <image xlink:href="{% if social[1].logo contains '://' %}{{ social[1].logo }}{% else %}{{ social[1].logo | relative_url }}{% endif %}" />
-          </svg>
+        {% if social[1].logo_light or social[1].logo_dark %}
+          <picture class="social-img">
+            {% if social[1].logo_dark %}
+              <source srcset="{% if social[1].logo_dark contains '://' %}{{ social[1].logo_dark }}{% else %}{{ social[1].logo_dark | relative_url }}{% endif %}" media="(prefers-color-scheme: dark)">
+            {% endif %}
+            <img
+              src="{% if social[1].logo_light contains '://' %}{{ social[1].logo_light }}{% else %}{{ social[1].logo_light | default: social[1].logo | relative_url }}{% endif %}"
+              alt="{{ social[1].title }}"
+              height="24"
+              width="24"
+            >
+          </picture>
         {% else %}
-          <img
-            src="{% if social[1].logo contains '://' %}{{ social[1].logo }}{% else %}{{ social[1].logo | relative_url }}{% endif %}"
-            alt="{{ social[1].title }}"
-          >
+          {% assign file_ext = social[1].logo | split: '.' | last %}
+          {% if file_ext == 'svg' %}
+            <svg>
+              <image xlink:href="{% if social[1].logo contains '://' %}{{ social[1].logo }}{% else %}{{ social[1].logo | relative_url }}{% endif %}" />
+            </svg>
+          {% else %}
+            <img
+              src="{% if social[1].logo contains '://' %}{{ social[1].logo }}{% else %}{{ social[1].logo | relative_url }}{% endif %}"
+              alt="{{ social[1].title }}"
+              height="24"
+              width="24"
+            >
+          {% endif %}
         {% endif %}
       </a>
   {% endcase %}
