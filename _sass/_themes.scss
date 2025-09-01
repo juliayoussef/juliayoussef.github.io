@@ -166,33 +166,37 @@ html[data-theme-setting="light"] {
 }
 
 /* ---------- Custom overrides ---------- */
-/* --- Social row: keep default layout; align custom image like FA --- */
-.social { text-align: center; }              /* restore al-folio default */
+/* ---------- Custom social icon fixes (place at end of file) ---------- */
 
-/* make each icon cell center its contents (doesn't affect the note) */
+/* Keep al-folio’s default flow (icons row, note below) */
+.social { text-align: center; }
+
+/* Each icon cell centers its content; matches FA sizing */
 .social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  font-size: 1.5rem;                         /* same scale FA uses */
-  margin: 0 0.5rem;
+  font-size: 1.5rem;        /* change this to scale ALL icons */
+  margin: 0 .5rem;
 }
 
-/* your custom <img> icons (light/dark) */
+/* Your custom image icons: scale like FA glyphs & align baseline */
 .social .social-img {
-  height: 1em;                               /* scale with font-size */
+  height: 1em;              /* scales with font-size */
   width: auto;
-  display: block;                            /* no inline baseline gap */
+  vertical-align: -0.125em; /* tweak to -0.10…-0.18em if needed */
 }
 
-/* ensure the note drops BELOW the icons */
-.social > p,
-.social > .note,
-.social > small,
-.social > span.note {                        /* catch typical note elements */
-  display: block;
-  margin-top: .75rem;
-  line-height: 1.4;
-}
+/* Theme swap for your two image files */
+.only-light.social-img { display: inline-block; }
+.only-dark.social-img  { display: none; }
 
+html[data-theme="dark"] .only-light.social-img { display: none; }
+html[data-theme="dark"] .only-dark.social-img  { display: inline-block; }
+
+/* First-paint fallback: follow OS theme before JS sets data-theme */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) .only-light.social-img { display: none; }
+  html:not([data-theme]) .only-dark.social-img  { display: inline-block; }
+}
