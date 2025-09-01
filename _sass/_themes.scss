@@ -166,27 +166,33 @@ html[data-theme-setting="light"] {
 }
 
 /* ---------- Custom overrides ---------- */
-/* Make the social row baseline-proof */
-.social {
-  display: flex;            /* row of icons */
-  flex-wrap: wrap;
-  gap: .75rem;              /* space between icons */
-  align-items: center;      /* vertical centering fixes baseline drift */
-}
+/* --- Social row: keep default layout; align custom image like FA --- */
+.social { text-align: center; }              /* restore al-folio default */
 
-/* Make each icon cell a centered box like FA glyphs */
+/* make each icon cell center its contents (doesn't affect the note) */
 .social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  line-height: 1;           /* no extra leading */
-  font-size: 1.5rem;        /* FA icon size — keeps everything in sync */
+  line-height: 1;
+  font-size: 1.5rem;                         /* same scale FA uses */
+  margin: 0 0.5rem;
 }
 
-/* Your custom image icons (both light & dark) */
-.social-img {
-  height: 1em;              /* scale with font-size like FA */
-  width: auto;              /* keep aspect ratio */
-  display: block;           /* avoid inline baseline quirks */
+/* your custom <img> icons (light/dark) */
+.social .social-img {
+  height: 1em;                               /* scale with font-size */
+  width: auto;
+  display: block;                            /* no inline baseline gap */
+}
+
+/* ensure the note drops BELOW the icons */
+.social > p,
+.social > .note,
+.social > small,
+.social > span.note {                        /* catch typical note elements */
+  display: block;
+  margin-top: .75rem;
+  line-height: 1.4;
 }
 
