@@ -100,10 +100,8 @@
       <a href="{{ social[1].url }}" title="{{ social[1].title }}">
         {% assign llight = social[1].logo_light | default: social[1].logo %}
         {% assign ddark  = social[1].logo_dark  | default: social[1].logo %}
-        <img src="{% if llight contains '://' %}{{ llight }}{% else %}{{ llight | relative_url }}{% endif %}"
-             alt="{{ social[1].title }}" class="only-light social-img" width="24" height="24">
-        <img src="{% if ddark contains '://' %}{{ ddark }}{% else %}{{ ddark | relative_url }}{% endif %}"
-             alt="{{ social[1].title }}" class="only-dark social-img" width="24" height="24">
+        <img src="{{ llight | relative_url }}" alt="{{ social[1].title }}" class="social-img only-light" width="24" height="24">
+        <img src="{{ ddark  | relative_url }}" alt="{{ social[1].title }}" class="social-img only-dark"  width="24" height="24">
       </a>
   {% endcase %}
 {% endfor %}
