@@ -57,12 +57,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
-            },},{id: "projects-learning-anatomy",
+          section: "News",},{id: "projects-learning-anatomy",
           title: 'Learning Anatomy',
           description: "a project where I post my progress learning generalized vertebrate anatomy",
           section: "Projects",handler: () => {
