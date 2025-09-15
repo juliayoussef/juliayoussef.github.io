@@ -13,7 +13,7 @@ featured: true
 ---
 # Welcome!
 
-Hi! My name is Julia Youssef, and I must say, working with the editor I am currently using might be the death of me, so excuse any typos in these first few posts.
+Hi! My name is Julia Youssef, and I must say, working with the editor I am currently using might be the death of me, so excuse any typos in these first few posts...
 
 I am a recent graduate from the University of Chicago, where I studied geosciences and nearly completed most of the astrophysics major before realizing I prefer working with the deep past underground than in the skies (though, I am often asked if I work with "space dinosaurs..."). I also spent a lot of my spare time (and electives) working on my art skills and cultivating my interests in philosophy of science as well as religion in classical antiquity. Now, I am still doing research – in this awkward space between undergrad and a hopeful PhD – and trying to grapple with the role paleontology has in our daily lives, society, and, well, my own academic trajectory. Hence, ...I wanted to set up this site, write about my thoughts and relationship to UChicago, geosciences, astrophysics, biology, and art.
 
