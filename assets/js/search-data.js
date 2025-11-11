@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-launching-off-the-fossil-record",
+        },{id: "post-on-writing",
+        
+          title: "On Writing",
+        
+        description: "Starting, and some topics and themes I&#39;d like to cover",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/On-Writing/";
+          
+        },
+      },{id: "post-launching-off-the-fossil-record",
         
           title: "Launching Off the Fossil Record!",
         
