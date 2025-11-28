@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href='#'>University of Chicago</a>. Hyde Park.
 profile:
   align: right
-  image: prof_pic.jpg
+  image: pano-wyoming-thin.jpg
   image_circular: false
  
 selected_papers: false
