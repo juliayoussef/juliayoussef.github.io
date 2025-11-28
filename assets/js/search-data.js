@@ -101,13 +101,6 @@ ninja.data = [{
           window.open("https://open.spotify.com/user/_arget_", "_blank");
         },
       },{
-        id: 'social-personal_art_hub',
-        title: 'Personal_art_hub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://art-of-arget.carrd.co/", "_blank");
-        },
-      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
