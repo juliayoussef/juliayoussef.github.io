@@ -181,22 +181,3 @@ html[data-theme-setting="light"] {
   margin: 0 .5rem;
 }
 
-/* Your custom image icons: scale like FA glyphs & align baseline */
-.social .social-img {
-  height: 1em;              /* scales with font-size */
-  width: auto;
-  vertical-align: -0.125em; /* tweak to -0.10…-0.18em if needed */
-}
-
-/* Theme swap for your two image files */
-.only-light.social-img { display: inline-block; }
-.only-dark.social-img  { display: none; }
-
-html[data-theme="dark"] .only-light.social-img { display: none; }
-html[data-theme="dark"] .only-dark.social-img  { display: inline-block; }
-
-/* First-paint fallback: follow OS theme before JS sets data-theme */
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme]) .only-light.social-img { display: none; }
-  html:not([data-theme]) .only-dark.social-img  { display: inline-block; }
-}
