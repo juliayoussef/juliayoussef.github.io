@@ -1,7 +1,7 @@
 ---
 layout: page
-title: arts
-permalink: /arts/
+title: art
+permalink: /art/
 description: my work
 nav: true
 nav_order: 5
