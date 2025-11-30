@@ -3,11 +3,12 @@ layout: page
 title: Personal Art & Sketchbook
 permalink: /art/personal/
 ---
-
-<div class="gallery">
-{% for img in site.static_files %}
-  {% if img.path contains 'assets/img/art/personal' %}
-    <img src="{{ img.path }}" />
-  {% endif %}
+{% for work in site.data.professional_art %}
+  <figure class="gallery-item">
+    <img src="/assets/img/art/personal/{{ work.file }}">
+    <figcaption>
+      <strong>{{ work.title }}</strong><br>
+      {{ work.description }}
+    </figcaption>
+  </figure>
 {% endfor %}
-</div>
