@@ -1,18 +1,12 @@
 ---
 ---
 
-/* -----------------------------------------------------------
-   custom.scss
-   Loaded after all al-folio theme styling.
-   Put all overrides + gallery styling here.
-------------------------------------------------------------- */
+/* ============================================================
+   CUSTOM STYLE OVERRIDES FOR ART GALLERY
+   This file loads AFTER all of al-folio's main theme CSS.
+============================================================ */
 
-/* import theme tokens so breakpoints & colors work */
-@import "main";
-
-/* -----------------------------------------------------------
-   FILTER BUTTONS
-------------------------------------------------------------- */
+/* ---------- FILTER BUTTONS ---------- */
 #filter-buttons {
   margin-bottom: 1.5rem;
   display: flex;
@@ -35,17 +29,14 @@
 }
 
 #filter-buttons button.active {
-  background: #8a9b68; /* earth-toned highlight */
+  background: #8a9b68;
   color: white;
 }
 
-/* -----------------------------------------------------------
-   MASONRY GRID (Pinterest style)
-------------------------------------------------------------- */
+/* ---------- MASONRY GRID ---------- */
 .masonry-grid {
   column-count: 3;
   column-gap: 1.5rem;
-  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -61,26 +52,22 @@
 }
 
 .masonry-item {
-  break-inside: avoid-column; /* more stable than avoid in Safari */
+  break-inside: avoid-column;
   margin-bottom: 1.5rem;
 }
 
-/* -----------------------------------------------------------
-   IMAGE WRAPPER + HOVER ZOOM
-------------------------------------------------------------- */
+/* ---------- IMAGE ---------- */
 .img-wrapper {
   overflow: hidden;
   border-radius: 6px;
   margin-bottom: 0.5rem;
-  display: block;
 }
 
 .img-wrapper img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 6px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform .3s ease, opacity .3s ease;
   cursor: zoom-in;
 }
 
@@ -89,9 +76,7 @@
   opacity: 0.9;
 }
 
-/* -----------------------------------------------------------
-   LIGHTBOX OVERLAY
-------------------------------------------------------------- */
+/* ---------- LIGHTBOX ---------- */
 #lightbox {
   position: fixed;
   top: 0;
@@ -100,10 +85,10 @@
   height: 100%;
   background: rgba(0,0,0,0.85);
   display: none;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   z-index: 5000;
-  padding: 1rem; /* allows margins on small screens */
+  padding: 1rem;
 }
 
 #lightbox img {
@@ -112,21 +97,4 @@
   border-radius: 6px;
   cursor: zoom-out;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-/* -----------------------------------------------------------
-   TEXT REFINEMENTS FOR GRID
-------------------------------------------------------------- */
-.masonry-item h3 {
-  margin-top: 0.6rem;
-  margin-bottom: 0.3rem;
-  font-size: 1.0rem;
-  font-weight: 600;
-}
-
-.masonry-item p {
-  margin-bottom: 0.2rem;
-  font-size: 0.9rem;
-  line-height: 1.3;
-  color: var(--global-text-color-secondary);
 }
