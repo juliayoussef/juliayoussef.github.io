@@ -1,18 +1,34 @@
 ---
 layout: page
-title: "Professional Illustration"
+title: "Professional Art & Illustration"
 permalink: /art/professional/
 ---
 
-Below is a selection of my scientific & anatomically-focused illustration work.
+Work produced for scientific outreach, paleoart, commissioned illustration, and academic projects.
 
-<div class="grid">
+<div id="filter-buttons">
+  <button data-filter="all" class="active">All</button>
+  <button data-filter="paleo">Paleoart</button>
+  <button data-filter="ink">Ink</button>
+  <button data-filter="digital">Digital</button>
+  <button data-filter="commission">Commission</button>
+</div>
+
+<div class="masonry-grid">
 {% for work in site.data.art.professional %}
-  <div class="grid-item">
-    <img src="{{ work.image }}" alt="{{ work.alt }}">
+  <div class="masonry-item" data-tags="{{ work.tags | join: ' ' }}">
+    <div class="img-wrapper">
+      <img src="{{ work.image }}" alt="{{ work.alt }}" data-full="{{ work.image }}">
+    </div>
     <h3>{{ work.title }}</h3>
     <p>{{ work.medium }} · {{ work.year }}</p>
     <p>{{ work.description }}</p>
   </div>
 {% endfor %}
 </div>
+
+<div id="lightbox">
+  <img id="lightbox-img">
+</div>
+
+<script src="/assets/js/art-gallery.js"></script>
