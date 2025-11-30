@@ -6,10 +6,12 @@ permalink: /art/professional/
 
 Below is a selection of my work, focusing on paleontology and biological anatomy.
 
-<div class="gallery">
-{% for img in site.static_files %}
-  {% if img.path contains 'assets/img/art/professional' %}
-    <img src="{{ img.path }}" />
-  {% endif %}
+{% for work in site.data.professional_art %}
+  <figure class="gallery-item">
+    <img src="/assets/img/art/professional/{{ work.file }}">
+    <figcaption>
+      <strong>{{ work.title }}</strong><br>
+      {{ work.description }}
+    </figcaption>
+  </figure>
 {% endfor %}
-</div>
