@@ -1,17 +1,18 @@
 ---
 layout: page
-title: Professional Illustration
+title: "Professional Illustration"
 permalink: /art/professional/
 ---
 
-Below is a selection of my work, focusing on paleontology and biological anatomy.
+Below is a selection of my scientific & anatomically-focused illustration work.
 
-{% for work in site.data.professional_art %}
-  <figure class="gallery-item">
-    <img src="/assets/img/art/professional/{{ work.file }}">
-    <figcaption>
-      <strong>{{ work.title }}</strong><br>
-      {{ work.description }}
-    </figcaption>
-  </figure>
+<div class="grid">
+{% for work in site.data.art.professional %}
+  <div class="grid-item">
+    <img src="{{ work.image }}" alt="{{ work.alt }}">
+    <h3>{{ work.title }}</h3>
+    <p>{{ work.medium }} · {{ work.year }}</p>
+    <p>{{ work.description }}</p>
+  </div>
 {% endfor %}
+</div>
