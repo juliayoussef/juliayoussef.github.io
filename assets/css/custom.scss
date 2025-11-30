@@ -1,73 +1,109 @@
-/* ---------- FILTER BUTTONS ---------- */
+---
+---
+
+/* -----------------------------------------------------------
+   custom.scss
+   Loaded after all al-folio theme styling.
+   Put all overrides + gallery styling here.
+------------------------------------------------------------- */
+
+/* import theme tokens so breakpoints & colors work */
+@import "main";
+
+/* -----------------------------------------------------------
+   FILTER BUTTONS
+------------------------------------------------------------- */
 #filter-buttons {
   margin-bottom: 1.5rem;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
 #filter-buttons button {
-  padding: .4rem .9rem;
+  padding: 0.4rem 0.9rem;
   border: none;
   border-radius: 20px;
   background: #ddd;
   cursor: pointer;
   font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+#filter-buttons button:hover {
+  background: #ccc;
 }
 
 #filter-buttons button.active {
-  background: #8a9b68;
+  background: #8a9b68; /* earth-toned highlight */
   color: white;
 }
 
-/* ---------- MASONRY GRID ---------- */
+/* -----------------------------------------------------------
+   MASONRY GRID (Pinterest style)
+------------------------------------------------------------- */
 .masonry-grid {
   column-count: 3;
   column-gap: 1.5rem;
+  width: 100%;
 }
 
-@media (max-width: 900px) {
-  .masonry-grid { column-count: 2; }
+@media (max-width: 1000px) {
+  .masonry-grid {
+    column-count: 2;
+  }
 }
 
 @media (max-width: 600px) {
-  .masonry-grid { column-count: 1; }
+  .masonry-grid {
+    column-count: 1;
+  }
 }
 
 .masonry-item {
-  break-inside: avoid;
+  break-inside: avoid-column; /* more stable than avoid in Safari */
   margin-bottom: 1.5rem;
 }
 
-/* ---------- HOVER ZOOM IMAGE ---------- */
+/* -----------------------------------------------------------
+   IMAGE WRAPPER + HOVER ZOOM
+------------------------------------------------------------- */
 .img-wrapper {
   overflow: hidden;
   border-radius: 6px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .img-wrapper img {
   width: 100%;
-  transition: transform .3s ease, opacity .3s ease;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   cursor: zoom-in;
 }
 
 .img-wrapper:hover img {
   transform: scale(1.05);
-  opacity: .9;
+  opacity: 0.9;
 }
 
-/* ---------- LIGHTBOX ---------- */
+/* -----------------------------------------------------------
+   LIGHTBOX OVERLAY
+------------------------------------------------------------- */
 #lightbox {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.85);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 5000;
+  padding: 1rem; /* allows margins on small screens */
 }
 
 #lightbox img {
@@ -75,4 +111,22 @@
   max-height: 90%;
   border-radius: 6px;
   cursor: zoom-out;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* -----------------------------------------------------------
+   TEXT REFINEMENTS FOR GRID
+------------------------------------------------------------- */
+.masonry-item h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.0rem;
+  font-weight: 600;
+}
+
+.masonry-item p {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: var(--global-text-color-secondary);
 }
