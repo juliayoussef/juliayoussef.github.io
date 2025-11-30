@@ -1,0 +1,36 @@
+professional:
+  - title: "Cardinal & Dove"
+    image: "/assets/img/art/professional/01_cardinal.jpg"
+    alt: "Colored pencil drawing of a cardinal and dove"
+    year: 2024
+    medium: "colored pencil"
+    description: "Field-inspired ornithology illustration."
+
+  - title: "Pterosaur Skull Diagram"
+    image: "/assets/img/art/professional/02_pterosaur_skull.png"
+    alt: "Pterosaur cranial anatomy illustration"
+    year: 2024
+    medium: "digital"
+    description: "Technical anatomical diagram for paleontology work."
+
+personal:
+  - title: "Watched"
+    image: "/assets/img/art/personal/abbys_album.jpg"
+    alt: ""
+    year: 2020
+    medium: "digital"
+    description: "An album art cover made for a friend"
+
+  - title: "Angels"
+    image: "/assets/img/art/personal/angels.jpg"
+    alt: ""
+    year: 2019
+    medium: "acrylic on canvas board"
+    description: "Practice piece exploring color and acrylic paint as a medium."
+
+  - title: "As Night Falls Nearer Now I Start to Forget the Day"
+    image: "/assets/img/art/personal/as_night_falls_nearer_now_I_start_to_forget_the_day.jpg"
+    year: 2023
+    medium: "willow charcoal"
+    description: "An art piece from a course project that asked to explore reptition - the constant texts with no response, the spotify song on repeat, figeting with jewelry day in and day out..."
+
