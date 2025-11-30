@@ -1,18 +1,3 @@
-professional:
-  - title: "Cardinal & Dove"
-    image: "/assets/img/art/professional/01_cardinal.jpg"
-    alt: "Colored pencil drawing of a cardinal and dove"
-    year: 2024
-    medium: "colored pencil"
-    description: "Field-inspired ornithology illustration."
-
-  - title: "Pterosaur Skull Diagram"
-    image: "/assets/img/art/professional/02_pterosaur_skull.png"
-    alt: "Pterosaur cranial anatomy illustration"
-    year: 2024
-    medium: "digital"
-    description: "Technical anatomical diagram for paleontology work."
-
 personal:
   - title: "Watched"
     image: "/assets/img/art/personal/abbys_album.jpg"
