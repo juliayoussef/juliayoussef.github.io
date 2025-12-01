@@ -8,11 +8,11 @@ Below is a selection of more informal, experimental, or sketchbook work.
 
 <!-- FILTER BUTTONS -->
 <div id="filter-buttons">
-  <button data-filter="all" class="active">All</button>
-  <button data-filter="digital">Digital</button>
-  <button data-filter="charcoal">Charcoal</button>
-  <button data-filter="acrylic">Acrylic</button>
-  <button data-filter="sketchbook">Sketchbook</button>
+  <button class="active" data-filter="all">All</button>
+  {% assign tags = site.data.art.personal | map: "tags" | uniq %}
+  {% for t in tags %}
+    <button data-filter="{{ t }}">{{ t }}</button>
+  {% endfor %}
 </div>
 
 <!-- MASONRY GRID -->
@@ -20,18 +20,24 @@ Below is a selection of more informal, experimental, or sketchbook work.
   {% for work in site.data.art.personal %}
   <div class="masonry-item" data-tags="{{ work.tags | join: ' ' }}">
     <div class="img-wrapper">
-      <img src="{{ work.image }}" alt="{{ work.alt }}" data-full="{{ work.image }}">
+      <img 
+        src="{{ work.image }}" 
+        alt="{{ work.alt | default: work.title }}" 
+        loading="lazy"
+        onclick="openLightbox('{{ work.image }}')"
+      >
+
+      <!-- HOVER OVERLAY -->
+      <div class="overlay">
+        <h3>{{ work.title }}</h3>
+        <p>{{ work.medium }} · {{ work.year }}</p>
+      </div>
     </div>
-    <h3>{{ work.title }}</h3>
-    <p>{{ work.medium }} · {{ work.year }}</p>
-    <p>{{ work.description }}</p>
   </div>
   {% endfor %}
 </div>
 
 <!-- LIGHTBOX -->
-<div id="lightbox">
+<div id="lightbox" onclick="closeLightbox()">
   <img id="lightbox-img">
 </div>
-
-<script src="/assets/js/art-gallery.js"></script>
