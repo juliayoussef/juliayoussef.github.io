@@ -1,183 +1,99 @@
 /*******************************************************************************
- * Themes — Arget Palette (Carrd/Fourthwall aligned) — Jekyll-safe
- * Notes:
- *  - Avoids sass:color channel interpolation for older converters.
- *  - Avoids undefined $back-to-top-* Sass vars by using CSS fallbacks.
+ * Themes — Arget Palette (Light/Dark)
+ * Goal: minimal, readable, Jekyll-safe, al-folio-compatible
  ******************************************************************************/
 
-/* ---------- LIGHT THEME ---------- */
+/* -------------------- LIGHT (default) -------------------- */
 :root {
   color-scheme: light;
 
-  /* Core surface & text */
-  --global-bg-color: #fcf6de; /* cornsilk */
-  --global-code-bg-color: #f8f0d7;
-  --global-text-color: #36271b; /* deep coffee */
-  --global-text-color-light: #6e5a45; /* muted coffee for secondary text */
-  --global-theme-color: #e09540; /* ochre (primary) */
-  --global-hover-color: #c4911e; /* darker ochre on hover */
-  --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #2f4b36; /* forest */
-  --global-footer-text-color: #fdf3de; /* soft light */
-  --global-footer-link-color: #ffffff;
-  --global-distill-app-color: #2d6b6d; /* teal accent */
-  --global-divider-color: rgba(54, 39, 27, 0.12);
-  --global-card-bg-color: #fff9e9; /* slightly brighter than page */
-  --global-highlight-color: #e09540; /* warm highlight */
+  /* Surfaces */
+  --global-bg-color: #F6F2DA;          /* parchment */
+  --global-card-bg-color: #FFF9E9;     /* lifted paper */
+  --global-code-bg-color: #F8F0D7;
 
-  /* Hard-coded rgba to avoid sass:color */
-  --global-back-to-top-bg-color: rgba(54, 39, 27, 0.4);
-  --global-back-to-top-text-color: #ffffff;
+  /* Text */
+  --global-text-color: #3A2F28;        /* warmer brown (primary text) */
+  --global-text-color-light: #6E5A45;  /* secondary text */
 
-  --global-newsletter-bg-color: #fff9e9;
-  --global-newsletter-text-color: #36271b;
+  /* Accents */
+  --global-theme-color: #C89B3C;       /* muted ochre */
+  --global-hover-color: #B9872D;
+  --global-hover-text-color: #1E1A16;
 
-  /* Admonitions (harmonized) */
-  --global-tip-block: #2d6b6d;
-  --global-tip-block-bg: #e6f0ee;
-  --global-tip-block-text: #1e4749;
-  --global-tip-block-title: #245c5f;
+  --global-distill-app-color: #4E6F73; /* slate blue-green */
+  --global-footer-bg-color: #4E5F3A;   /* field olive */
 
-  --global-warning-block: #c4911e;
-  --global-warning-block-bg: #fff3d9;
-  --global-warning-block-text: #6a4f10;
-  --global-warning-block-title: #936e15;
+  /* UI */
+  --global-divider-color: rgba(58, 47, 40, 0.14);
+  --global-highlight-color: #C89B3C;
 
-  --global-danger-block: #9e2a2a;
-  --global-danger-block-bg: #fbe7e7;
-  --global-danger-block-text: #5e1717;
-  --global-danger-block-title: #7e1f1f;
+  /* Back-to-top (use tokens, not duplicated rules) */
+  --back-to-top-bg: rgba(58, 47, 40, 0.40);
+  --back-to-top-fg: #FFF9E9;
 
-  /* Toggle icons visibility (light default) */
-  #light-toggle-system {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
-  }
-  #light-toggle-dark {
-    display: none;
-  }
-  #light-toggle-light {
-    display: none;
-  }
-
-  .only-light {
-    display: block;
-  }
-  .only-dark {
-    display: none;
-  }
-
-  /* Back to top — CSS fallbacks (no Sass vars) */
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-    bottom: var(--back-to-top-bottom, 20px);
-    right: var(--back-to-top-right, 20px);
-    height: var(--back-to-top-height, 42px);
-    width: var(--back-to-top-width, 42px);
-    z-index: 9999;
-  }
+  /* Newsletter (if enabled) */
+  --global-newsletter-bg-color: #FFF9E9;
+  --global-newsletter-text-color: #3A2F28;
 }
 
-/* ---------- DARK THEME ---------- */
+/* -------------------- DARK -------------------- */
 html[data-theme="dark"] {
   color-scheme: dark;
 
-  /* Core surface & text */
-  --global-bg-color: #0f1a17; /* deep green-black */
-  --global-code-bg-color: #17221f;
-  --global-text-color: #fcf6de; /* cornsilk */
-  --global-text-color-light: #b9b19b; /* muted light */
-  --global-theme-color: #2d6b6d; /* teal (primary in dark) */
-  --global-hover-color: #3c8b90;
-  --global-hover-text-color: #0f1a17;
-  --global-footer-bg-color: #1b2623;
-  --global-footer-text-color: #eae1c6;
-  --global-footer-link-color: #fcf6de;
-  --global-distill-app-color: #c4911e; /* ochre accent in dark */
-  --global-divider-color: #2a3532;
-  --global-card-bg-color: #1b2623; /* slightly lifted card */
-  --global-highlight-color: #e5a45b;
+  /* Surfaces */
+  --global-bg-color: #1E1A16;          /* deep warm brown-black */
+  --global-card-bg-color: #26211C;     /* lifted dark */
+  --global-code-bg-color: #2B241E;
 
-  /* Hard-coded rgba to avoid sass:color */
-  --global-back-to-top-bg-color: rgba(252, 246, 222, 0.5);
-  --global-back-to-top-text-color: #0f1a17;
+  /* Text */
+  --global-text-color: #E6DDC8;        /* parchment-light */
+  --global-text-color-light: #BEB39A;  /* muted sand */
 
-  --global-newsletter-bg-color: #1b2623;
-  --global-newsletter-text-color: #fcf6de;
+  /* Accents */
+  --global-theme-color: #C89B3C;       /* keep ochre as identity anchor */
+  --global-hover-color: #D6B05A;
+  --global-hover-text-color: #1E1A16;
 
-  /* Admonitions (dark-tuned) */
-  --global-tip-block: #6fb0b3;
-  --global-tip-block-bg: #122623;
-  --global-tip-block-text: #cfe8e9;
-  --global-tip-block-title: #a8d4d6;
+  --global-distill-app-color: #6F8F92; /* soft slate */
+  --global-footer-bg-color: #26211C;
 
-  --global-warning-block: #e0b04a;
-  --global-warning-block-bg: #2a2213;
-  --global-warning-block-text: #ffe9b8;
-  --global-warning-block-title: #f5cd79;
+  /* UI */
+  --global-divider-color: #3A332C;
+  --global-highlight-color: #D6B05A;
 
-  --global-danger-block: #d26060;
-  --global-danger-block-bg: #2a1414;
-  --global-danger-block-text: #ffd6d6;
-  --global-danger-block-title: #f29a9a;
+  /* Back-to-top */
+  --back-to-top-bg: rgba(230, 221, 200, 0.45);
+  --back-to-top-fg: #1E1A16;
 
-  .only-light {
-    display: none;
-  }
-  .only-dark {
-    display: block;
-  }
+  --global-newsletter-bg-color: #26211C;
+  --global-newsletter-text-color: #E6DDC8;
 }
 
-/* ---------- Toggle state helpers (unchanged logic) ---------- */
-html[data-theme-setting="dark"] {
-  #light-toggle-system {
-    display: none;
-  }
-  #light-toggle-dark {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
-  }
-  #light-toggle-light {
-    display: none;
-  }
-
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-  }
+/* -------------------- Small, centralized UI rules -------------------- */
+#back-to-top {
+  color: var(--back-to-top-fg);
+  background: var(--back-to-top-bg);
+  bottom: var(--back-to-top-bottom, 20px);
+  right: var(--back-to-top-right, 20px);
+  height: var(--back-to-top-height, 42px);
+  width: var(--back-to-top-width, 42px);
+  z-index: 9999;
 }
 
-html[data-theme-setting="light"] {
-  #light-toggle-system {
-    display: none;
-  }
-  #light-toggle-dark {
-    display: none;
-  }
-  #light-toggle-light {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
-  }
-}
+/* Toggle icon visibility: keep logic, but don’t bury it inside :root */
+.only-light { display: block; }
+.only-dark  { display: none; }
+html[data-theme="dark"] .only-light { display: none; }
+html[data-theme="dark"] .only-dark  { display: block; }
 
-/* ---------- Custom overrides ---------- */
-/* ---------- Custom social icon fixes (place at end of file) ---------- */
-
-/* Keep al-folio’s default flow (icons row, note below) */
+/* Social icon sizing */
 .social { text-align: center; }
-
-/* Each icon cell centers its content; matches FA sizing */
 .social a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  font-size: 1.5rem;        /* change this to scale ALL icons */
+  font-size: 1.5rem;
   margin: 0 .5rem;
 }
-
