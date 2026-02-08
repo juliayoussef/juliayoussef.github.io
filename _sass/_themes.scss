@@ -43,4 +43,118 @@
   --global-newsletter-text-color: #3A2F28;
 }
 
-/* =============*
+/* ============================================================
+ * DARK THEME
+ * ============================================================ */
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* ---------- Core surfaces ---------- */
+  --global-bg-color: #1E1A16;          /* warm brown-black */
+  --global-card-bg-color: #26211C;
+  --global-code-bg-color: #2B241E;
+
+  /* ---------- Text ---------- */
+  --global-text-color: #E6DDC8;        /* parchment-light */
+  --global-text-color-light: #BEB39A;
+
+  /* ---------- Accents ---------- */
+  --global-theme-color: #C89B3C;       /* identity anchor */
+  --global-hover-color: #D6B05A;
+  --global-hover-text-color: #1E1A16;
+
+  --global-distill-app-color: #6F8F92; /* softened slate */
+  --global-highlight-color: #D6B05A;
+
+  /* ---------- Footer ---------- */
+  --global-footer-bg-color: #26211C;
+  --global-footer-text-color: #E6DDC8;
+  --global-footer-link-color: #E6DDC8;
+
+  /* ---------- UI ---------- */
+  --global-divider-color: #3A332C;
+
+  /* Back to top */
+  --global-back-to-top-bg-color: rgba(230, 221, 200, 0.45);
+  --global-back-to-top-text-color: #1E1A16;
+
+  /* Newsletter */
+  --global-newsletter-bg-color: #26211C;
+  --global-newsletter-text-color: #E6DDC8;
+}
+
+/* ============================================================
+ * TOGGLE ICON VISIBILITY (al-folio expected behavior)
+ * ============================================================ */
+
+/* Default: system */
+#light-toggle-system {
+  padding-left: 10px;
+  padding-top: 12px;
+  display: block;
+}
+#light-toggle-dark   { display: none; }
+#light-toggle-light  { display: none; }
+
+/* Explicit DARK */
+html[data-theme-setting="dark"] {
+  #light-toggle-system { display: none; }
+  #light-toggle-dark   { padding-left: 10px; padding-top: 12px; display: block; }
+  #light-toggle-light  { display: none; }
+}
+
+/* Explicit LIGHT */
+html[data-theme-setting="light"] {
+  #light-toggle-system { display: none; }
+  #light-toggle-dark   { display: none; }
+  #light-toggle-light  { padding-left: 10px; padding-top: 12px; display: block; }
+}
+
+/* ============================================================
+ * BACK TO TOP (single rule, uses tokens)
+ * ============================================================ */
+#back-to-top {
+  color: var(--global-back-to-top-text-color);
+  background: var(--global-back-to-top-bg-color);
+  bottom: var(--back-to-top-bottom, 20px);
+  right: var(--back-to-top-right, 20px);
+  height: var(--back-to-top-height, 42px);
+  width: var(--back-to-top-width, 42px);
+  z-index: 9999;
+}
+
+/* ============================================================
+ * FOOTER FORCE FIX (prevents dark text in light mode)
+ * ============================================================ */
+footer,
+.footer {
+  color: var(--global-footer-text-color) !important;
+}
+
+footer a,
+.footer a,
+footer a:visited,
+.footer a:visited {
+  color: var(--global-footer-link-color) !important;
+}
+
+footer a:hover,
+.footer a:hover {
+  color: var(--global-hover-color) !important;
+}
+
+/* ============================================================
+ * SOCIAL ICON SIZING (unchanged)
+ * ============================================================ */
+.social {
+  text-align: center;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 1.5rem;
+  margin: 0 .5rem;
+}
