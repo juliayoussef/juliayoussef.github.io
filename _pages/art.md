@@ -52,7 +52,7 @@ Click each work to see full-screen along with any metadata and progress notes.
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem 0.55rem;
+    gap: 0.45rem 0.55rem;
     align-items: center;
   }
 
@@ -64,18 +64,26 @@ Click each work to see full-screen along with any metadata and progress notes.
 
   .art-tag-filter {
     appearance: none;
-    border: 0;
-    background: transparent;
-    padding: 0;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    background: var(--global-card-bg-color);
+    padding: 0.35rem 0.7rem;
     color: var(--global-theme-color);
     cursor: pointer;
     text-decoration: none;
+    line-height: 1.1;
+    transition:
+      background-color 0.15s ease,
+      border-color 0.15s ease,
+      color 0.15s ease;
   }
 
   .art-tag-filter:hover,
   .art-tag-filter.is-active {
-    color: var(--global-hover-color);
-    text-decoration: underline;
+    background: var(--global-hover-color);
+    border-color: var(--global-hover-color);
+    color: var(--global-footer-text-color);
+    text-decoration: none;
   }
 
   .art-tag-separator {
@@ -96,7 +104,7 @@ Click each work to see full-screen along with any metadata and progress notes.
   .img-wrapper {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 12px;
     background: #111;
   }
 

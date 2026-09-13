@@ -125,28 +125,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     renderWritingsPage(1);
 
-    const notesItems = Array.from(document.querySelectorAll("[data-note-item]"));
-    const notesLoadMoreButton = document.querySelector("[data-notes-load-more]");
-    const notesInitialCount = parseInt(writingsLayout.dataset.notesInitialCount || "4", 10);
-    const notesLoadIncrement = parseInt(writingsLayout.dataset.notesLoadIncrement || "3", 10);
-    let visibleNotesCount = notesInitialCount;
+    const snippetItems = Array.from(document.querySelectorAll("[data-snippet-item]"));
+    const snippetsLoadMoreButton = document.querySelector("[data-snippets-load-more]");
+    const snippetsInitialCount = parseInt(writingsLayout.dataset.snippetsInitialCount || "4", 10);
+    const snippetsLoadIncrement = parseInt(writingsLayout.dataset.snippetsLoadIncrement || "3", 10);
+    let visibleSnippetsCount = snippetsInitialCount;
 
-    const renderNotes = () => {
-      notesItems.forEach((item, index) => {
-        item.hidden = index >= visibleNotesCount;
+    const renderSnippets = () => {
+      snippetItems.forEach((item, index) => {
+        item.hidden = index >= visibleSnippetsCount;
       });
 
-      if (notesLoadMoreButton) {
-        notesLoadMoreButton.hidden = visibleNotesCount >= notesItems.length;
+      if (snippetsLoadMoreButton) {
+        snippetsLoadMoreButton.hidden = visibleSnippetsCount >= snippetItems.length;
       }
     };
 
-    notesLoadMoreButton?.addEventListener("click", () => {
-      visibleNotesCount = Math.min(visibleNotesCount + notesLoadIncrement, notesItems.length);
-      renderNotes();
+    snippetsLoadMoreButton?.addEventListener("click", () => {
+      visibleSnippetsCount = Math.min(visibleSnippetsCount + snippetsLoadIncrement, snippetItems.length);
+      renderSnippets();
     });
 
-    renderNotes();
+    renderSnippets();
   }
 });
 

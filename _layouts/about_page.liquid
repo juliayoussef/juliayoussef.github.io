@@ -59,6 +59,11 @@ layout: default
     margin-bottom: 2rem;
   }
 
+  .about-current-reading-list {
+    display: grid;
+    gap: 0.75rem;
+  }
+
   .about-current-reading-link {
     display: block;
     padding: 1rem;
@@ -190,7 +195,6 @@ layout: default
   {% assign book_posts = all_posts | where_exp: "post", "post.path contains '_posts/book-notes/'" %}
   {% assign reading_posts = book_posts | where: "status", "reading" %}
   {% assign read_posts = book_posts | where: "status", "read" %}
-  {% assign current_reading_post = reading_posts | first %}
   {% assign read_book_count = read_posts.size %}
 
   <header class="page-hero about-hero">
@@ -225,21 +229,32 @@ layout: default
         <section class="home-section about-current-reading-section">
           <h2 class="home-section-title">currently reading</h2>
 
-          {% if current_reading_post %}
-            {% assign current_reading_url = current_reading_post.url %}
-            {% assign current_reading_title = current_reading_post.book_title | default: current_reading_post.title %}
-            {% assign current_reading_author = current_reading_post.book_author | default: current_reading_post.author %}
+          {% if reading_posts.size > 0 %}
+            <div class="about-current-reading-list">
+              {% for current_reading_post in reading_posts %}
+                {% assign current_reading_url = current_reading_post.url %}
+                {% assign current_reading_title = current_reading_post.book_title | default: current_reading_post.title %}
+                {% assign current_reading_author = current_reading_post.book_author | default: current_reading_post.author %}
+
+                <a class="about-current-reading-link" href="{{ current_reading_url | relative_url }}">
+                  <span class="about-book-title">{{ current_reading_title }}</span>
+                  {% if current_reading_author %}
+                    <span class="about-book-author">by {{ current_reading_author }}</span>
+                  {% endif %}
+                  <span class="about-book-action">Click to see thoughts</span>
+                </a>
+              {% endfor %}
+            </div>
           {% else %}
             {% assign current_reading_url = page.current_reading.url | default: "" | strip %}
             {% assign current_reading_title = page.current_reading.title %}
             {% assign current_reading_author = page.current_reading.author %}
-          {% endif %}
 
-          {% if current_reading_url != "" %}
-            <a class="about-current-reading-link" href="{{ current_reading_url | relative_url }}">
-          {% else %}
-            <div class="about-current-reading-link about-current-reading-link--static">
-          {% endif %}
+            {% if current_reading_url != "" %}
+              <a class="about-current-reading-link" href="{{ current_reading_url | relative_url }}">
+            {% else %}
+              <div class="about-current-reading-link about-current-reading-link--static">
+            {% endif %}
               <span class="about-book-title">{{ current_reading_title }}</span>
               {% if current_reading_author %}
                 <span class="about-book-author">by {{ current_reading_author }}</span>
@@ -247,10 +262,11 @@ layout: default
               {% if current_reading_url != "" %}
                 <span class="about-book-action">Click to see thoughts</span>
               {% endif %}
-          {% if current_reading_url != "" %}
-            </a>
-          {% else %}
-            </div>
+            {% if current_reading_url != "" %}
+              </a>
+            {% else %}
+              </div>
+            {% endif %}
           {% endif %}
         </section>
 
@@ -307,13 +323,13 @@ layout: default
         {% endfor %}
       </div>
 
-      <nav class="writings-pagination about-books-pagination" aria-label="Book reading history pagination" data-book-notes-pagination hidden>
+      <nav class="writings-pagination about-books-pagination" aria-label="Book snippets pagination" data-book-notes-pagination hidden>
         <button type="button" class="writings-pagination-button" data-book-notes-prev>Previous</button>
         <div class="writings-pagination-pages" data-book-notes-pages></div>
         <button type="button" class="writings-pagination-button" data-book-notes-next>Next</button>
       </nav>
     {% else %}
-      <p class="writings-empty-state">No finished book notes yet.</p>
+      <p class="writings-empty-state">No finished book snippets yet.</p>
     {% endif %}
   </section>
 </div>

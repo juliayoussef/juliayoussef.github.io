@@ -9,13 +9,11 @@ nav_order: 2
 <div class="post writings-page">
   {% assign all_posts = site.posts | sort: "date" | reverse %}
   {% assign writing_posts = all_posts | where_exp: "post", "post.path contains '_posts/writings/'" %}
-  {% assign note_posts = all_posts | where_exp: "post", "post.path contains '_posts/notes/'" %}
-  {% assign book_note_posts = all_posts | where_exp: "post", "post.path contains '_posts/book-notes/'" %}
-  {% assign notebook_posts = note_posts | concat: book_note_posts | sort: "date" | reverse %}
+  {% assign snippet_posts = all_posts | where_exp: "post", "post.path contains '_posts/snippets/'" %}
   {% assign featured_posts = writing_posts | where: "featured", true %}
   {% assign writings_per_page = 4 %}
-  {% assign notes_initial_count = 6 %}
-  {% assign notes_load_increment = 2 %}
+  {% assign snippets_initial_count = 6 %}
+  {% assign snippets_load_increment = 2 %}
 
   {% assign essay_tags_csv = "" %}
   {% for post in writing_posts %}
@@ -43,8 +41,8 @@ nav_order: 2
   <div
     class="row writings-layout-row"
     data-writings-page-size="{{ writings_per_page }}"
-    data-notes-initial-count="{{ notes_initial_count }}"
-    data-notes-load-increment="{{ notes_load_increment }}"
+    data-snippets-initial-count="{{ snippets_initial_count }}"
+    data-snippets-load-increment="{{ snippets_load_increment }}"
   >
     <div class="col-lg-8 col-md-7">
       <section class="writings-main-column">
@@ -208,28 +206,24 @@ nav_order: 2
     <div class="col-lg-4 col-md-5">
       <aside class="writings-notes-column">
         <section class="home-section writings-notes-section">
-          <h2 class="home-section-title">notebooks</h2>
+          <h2 class="home-section-title">snippets</h2>
 
-          {% if notebook_posts.size > 0 %}
-            <div class="writings-notes-scroll" data-notes-list>
-              {% assign note_index = 0 %}
-              {% for post in notebook_posts %}
-                {% assign note_index = note_index | plus: 1 %}
-                {% assign note_word_count = post.content | strip_html | number_of_words %}
+          {% if snippet_posts.size > 0 %}
+            <div class="writings-notes-scroll" data-snippets-list>
+              {% assign snippet_index = 0 %}
+              {% for post in snippet_posts %}
+                {% assign snippet_index = snippet_index | plus: 1 %}
+                {% assign snippet_word_count = post.content | strip_html | number_of_words %}
                 {% assign note_preview = post.content | strip_html | truncatewords: 100 %}
-                {% assign notebook_type = "note" %}
-                {% if post.path contains "_posts/book-notes/" %}
-                  {% assign notebook_type = "book note" %}
-                {% endif %}
 
                 <article
-                  class="card mb-3 hoverable writings-note-card{% if note_word_count > 100 %} writings-note-card--faded{% endif %}"
-                  data-note-item
-                  data-note-index="{{ note_index }}"
+                  class="card mb-3 hoverable writings-note-card{% if snippet_word_count > 100 %} writings-note-card--faded{% endif %}"
+                  data-snippet-item
+                  data-snippet-index="{{ snippet_index }}"
                 >
                   <div class="card-body">
                     <p class="post-meta writings-meta-row mb-2">
-                      <span>{{ notebook_type }}</span>
+                      <span>snippet</span>
                       <span>{{ post.date | date: '%B %d, %Y' }}</span>
                       {% if post.tags and post.tags.size > 0 %}
                         <span>{{ post.tags | join: " | " }}</span>
@@ -245,13 +239,13 @@ nav_order: 2
                 </article>
               {% endfor %}
             </div>
-            {% if notebook_posts.size > notes_initial_count %}
+            {% if snippet_posts.size > snippets_initial_count %}
               <div class="writings-notes-actions">
-                <button type="button" class="writings-load-more-button" data-notes-load-more>Load more notebooks</button>
+                <button type="button" class="writings-load-more-button" data-snippets-load-more>Load more snippets</button>
               </div>
             {% endif %}
           {% else %}
-          <p class="writings-empty-state">No notebooks yet.</p>
+          <p class="writings-empty-state">No snippets yet.</p>
           {% endif %}
         </section>
       </aside>
@@ -357,27 +351,27 @@ nav_order: 2
 
     renderWritingsPage(1);
 
-    const notesItems = Array.from(document.querySelectorAll("[data-note-item]"));
-    const notesLoadMoreButton = document.querySelector("[data-notes-load-more]");
-    const notesInitialCount = parseInt(writingsLayout.dataset.notesInitialCount || "4", 10);
-    const notesLoadIncrement = parseInt(writingsLayout.dataset.notesLoadIncrement || "3", 10);
-    let visibleNotesCount = notesInitialCount;
+    const snippetItems = Array.from(document.querySelectorAll("[data-snippet-item]"));
+    const snippetsLoadMoreButton = document.querySelector("[data-snippets-load-more]");
+    const snippetsInitialCount = parseInt(writingsLayout.dataset.snippetsInitialCount || "4", 10);
+    const snippetsLoadIncrement = parseInt(writingsLayout.dataset.snippetsLoadIncrement || "3", 10);
+    let visibleSnippetsCount = snippetsInitialCount;
 
-    const renderNotes = () => {
-      notesItems.forEach((item, index) => {
-        item.hidden = index >= visibleNotesCount;
+    const renderSnippets = () => {
+      snippetItems.forEach((item, index) => {
+        item.hidden = index >= visibleSnippetsCount;
       });
 
-      if (notesLoadMoreButton) {
-        notesLoadMoreButton.hidden = visibleNotesCount >= notesItems.length;
+      if (snippetsLoadMoreButton) {
+        snippetsLoadMoreButton.hidden = visibleSnippetsCount >= snippetItems.length;
       }
     };
 
-    notesLoadMoreButton?.addEventListener("click", () => {
-      visibleNotesCount = Math.min(visibleNotesCount + notesLoadIncrement, notesItems.length);
-      renderNotes();
+    snippetsLoadMoreButton?.addEventListener("click", () => {
+      visibleSnippetsCount = Math.min(visibleSnippetsCount + snippetsLoadIncrement, snippetItems.length);
+      renderSnippets();
     });
 
-    renderNotes();
+    renderSnippets();
   });
 </script>

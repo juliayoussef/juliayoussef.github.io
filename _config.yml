@@ -176,6 +176,7 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - archive/
+  - assets/jupyter/blog.ipynb
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md

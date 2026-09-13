@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Regulating [Relationships] in the Roman Empire: Ideology, the Bible, and the Early Christians"
+author: "David Wheeler-Reed"
+date: '2026-9-11 10:00:00 -0500'
+date_label:
+description: 
+status: reading
+tags:
+thumbnail: 
+toc: false
+featured: false
+giscus_comments: true
+---
+
+Anyone who has met me in real life knows that I have a slight interest in religious history, specifically, the evolution (!!!) of Christianity within the larger eastern Mediterarean context. I like understanding why individuals believe what they do, the contexts in which that belief develops, and the ways it changes through time and place. Broadly, I casually like to read about everything from the periods ranging from late Second Temple Judaism, to the Apostolic and Patristic Ages of early Christianity, Gnostism, pre-Nicene theologies, and Syncretism. 
+
+There's something uniquely fascinating, to me, about the development of regional apocolyptic practice into the religion of empire and authority. And, to read, first hand, the emergence of understandings of text and tradition that would develop into the sort of Christianity that dominates the culture of the nation I live within. There's something uniquely infuriating, as well, to see the current American political engagement with said religion, given that understanding of earlier works. 
+
+That is not say beliefs cannot evolve, that scripture and religion cannot mean different things to different groups. I see religion as something always reinvented, different aspects re-emphasized, in the context of each period, each time and place. And yet, maybe its the pedant in me that gets annoyed when discussions of in the United States, particularly by the Right, are shaped by the fundemental assumption that their understanding of Christianity is the "correct," one, the "obvious," one, the one that is so clear to all that to *not* ascribe to the Evangelical's version is to be willfully obtuse. The idea, too, that there is an "objective" Judeo-Christian zeigtgeist of belief, from Paul to ... Billy Graham, to Joel Olsteen, consistent and unchanging. 
+
+Wheeler-Reed's "Regulating Sex in the Roman Empire." essentially adds fuel to the fire of my frustration. The work appears inspired by the current rhetoric of a "return to Judeo-Christian values," and dissects evidence for ideologies within early-empire Rome, Judaism, and early Christianity to show not only the variance, but the contradiction in the supposition that there was a shared mindset towards marriage, sex, and sexuality. 
+
+In particular, Wheeler-Reed argues not only that the current focus on the family and procreatism is more reminiscent of Augustan law and perhaps some Judaic thought, but also that Christianity's own rheotric was evolving, subject to internal debate, and distinct from the perhaps "Biblical" view. Take, for instance, the oft-quoted "Wives, submit yourselves to your own husbands as you do to the Lord," Ephesians 5:22, or "I do not permit a woman to teach or assume authority over a man; she must be quiet," 1 Timothy 2:12. Compare these to "There is neither Jew nor Gentile, neither slave nor free, nor is there male and female, for you are all one in Christ Jesus," Galatians 3:28. Not only that, early Pauline letters also describe a *lack* of urgency around marriage -- with Jesus coming, stay married if married, single if single; if needed to stay pure, marry." Expanding to non-canonical works, we have the Acts of Paul and Thecla, which describe a woman who through righteousness and chastity can not only preach, but baptise others in the name of Jesus. 
+
+Critically, I should note, Timothy (as one of the Pastoral Epistles) and Ephesians (more controversially) are written by pseudo-Paul -- at least, not by the same author as Galatians, Romans, Corinthians, or Thessalonians. They appear to have arisen later -- particularly, in the decades after Jesus' return began to seem less immedietly eminent. There appears to be a debate between the optimal christian ethic: eternal chastity, or marriage. And, if marriage, perhaps no procreatism -- whereas, on the otherside, the enforcement of hierarchy, and internalization of "Be fruitful and multiply." It is clear to see, then, how both very procreative Catholics and Coptic Monks could emerge from the same tradition. Equally clear, then, that there is not only one unified "Christian" perspective, there is certainly not one united "Judeo-Christian" one. 
+
+Anyways, I am not done the book. Perhaps one that indulges a perspective I already had is dangerous -- validating underlying, and perhaps, not fully verified perspectives. I'll try to find some other essays to find more information. But I've enjoyed the ... casual, and perhaps direct, way it makes its positions, though I do wish there were more examples defining the instances of the various ideologies. 
+
+For instance, the gamut of Roman sexuality is primarily told through sparse grecosphere literature and augustinian law -- though, maybe there's not much more -- but for a chapter meant to describe the particular ideology of a culture, it felt ... outlined. As if the author was so embedded in the sources, and himself with such an understanding of his position, that the principles and sources were more supportive or self-evident than I supposed, as a reader. Uncertain, though. I've liked it -- but I apprieciated comparable discussion moreseo in the work "Dirt, Shame, Status: Perspectives on Same-Sex Sexuality in the Bible and the Ancient World," by Thomas Kazen. While overlapping only, with different focuses, I felt that Kazen's work better leveraged primary sources to build a characteristic underlying ideology, as compared to Wheeler-Reed's which felt somewhat more projected, despite my agreement with his conclusions and interpretations. 

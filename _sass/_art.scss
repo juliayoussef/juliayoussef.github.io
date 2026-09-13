@@ -6,12 +6,22 @@
 }
 
 .art-tag-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background: var(--global-card-bg-color);
+  line-height: 1.1;
   text-decoration: none;
 }
 
+.art-tag-link:hover,
 .art-tag-link.active {
-  font-weight: 600;
-  text-decoration: underline;
+  background: var(--global-hover-color);
+  border-color: var(--global-hover-color);
+  color: var(--global-footer-text-color);
+  text-decoration: none;
 }
 
 .art-tag-separator {
@@ -60,7 +70,7 @@
 .img-wrapper {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .img-wrapper img {
@@ -121,7 +131,7 @@
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .art-piece-summary {

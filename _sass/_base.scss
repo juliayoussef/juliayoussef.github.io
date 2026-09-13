@@ -223,6 +223,7 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border-radius: 0.65rem;
 
   .card-img {
     width: 100%;
@@ -689,21 +690,38 @@ footer.sticky-bottom {
 .pagination {
   .page-item {
     .page-link {
+      font-family: "Public Sans", sans-serif;
       color: var(--global-text-color);
+      background-color: var(--global-card-bg-color);
+      border-color: var(--global-divider-color);
+      border-radius: 999px;
       padding: 0.75rem 1.15rem;
 
       &:hover {
-        color: $black-color;
+        color: var(--global-hover-text-color);
+        background-color: var(--global-hover-color);
+        border-color: var(--global-hover-color);
+        text-decoration: none;
       }
     }
 
     &.active .page-link {
-      color: $white-color;
-      background-color: var(--global-theme-color);
+      color: var(--global-footer-text-color);
+      background-color: var(--global-footer-bg-color);
+      border-color: var(--global-footer-bg-color);
 
       &:hover {
-        background-color: var(--global-theme-color);
+        color: var(--global-footer-text-color);
+        background-color: var(--global-footer-bg-color);
+        border-color: var(--global-footer-bg-color);
       }
+    }
+
+    &.disabled .page-link {
+      color: var(--global-text-color-light);
+      background-color: var(--global-bg-color);
+      border-color: var(--global-divider-color);
+      opacity: 0.55;
     }
   }
 }
