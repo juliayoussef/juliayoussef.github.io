@@ -1,285 +1,160 @@
 {
   "basics": {
     "name": "Julia Youssef",
-    "label": "Geosciences & Paleobiology Researcher",
+    "label": "Geophysical Sciences graduate",
     "image": "/assets/img/prof_pic.jpg",
-    "email": "juliayoussef@outlook.com", 
+    "email": "juliayoussef@outlook.com",
     "phone": "(443) 422-8015",
-    "url": "https://jhyoussef.github.io/",
-    "summary": "Recent UChicago graduate working in paleontology and quantitative modeling, focused on reconstructing ecological systems through time.",
+    "url": "https://juliayoussef.github.io/",
+    "summary": "Recent UChicago Geophysical Sciences graduate with experience in paleontology, quantitative ecology, computational research, and scientific communication. Skilled in analyzing complex biological datasets, developing research workflows, and working with museum and fossil specimens.",
     "location": {
       "city": "Chicago",
       "region": "Illinois",
-      "countryCode": "US",
-      "postalCode": "60615"
+      "countryCode": "US"
     },
     "profiles": [
       {
         "network": "GitHub",
-        "username": "jhyoussef",
-        "url": "https://github.com/jhyoussef"
+        "username": "juliayoussef",
+        "url": "https://github.com/juliayoussef"
       }
     ]
   },
 
-  "work": [
-    {
-      "name": "University of Chicago — Slater Lab",
-      "position": "Undergraduate Researcher (Mammalian Dentition & Diet)",
-      "url": "https://geosci.uchicago.edu/",
-      "location": "Chicago, IL",
-      "startDate": "2023-06-30",
-      "summary": "Developing quantitative frameworks linking mammalian molar morphology to herbivorous diet across extant and fossil taxa.",
-      "highlights": [
-        "Built a standardized dataset of herbivore diets by assigning ranked importances to plant food items from primary literature.",
-        "Expanded methods from carnivore dietary ecology to herbivores, integrating keywords, rankings, and ecological guilds.",
-        "Applied PCA and clustering analyses to identify grazer–browser divisions, specialist guilds (e.g. frugivores), and dietary subniches.",
-        "Incorporated 3D molar surface metrics (e.g., OPCr, RFI, DNE) into Bayesian models to predict diet from morphology.",
-        "Developed a probabilistic framework to infer dietary niches in extinct mammals from fossil dentition."]
-    },
-    {
-      "name": "University of Chicago — Webster Lab",
-      "position": "Undergraduate Researcher (Trilobite Morphology)",
-      "url": "https://geosci.uchicago.edu/",
-      "location": "Chicago, IL",
-      "startDate": "2024-02-15",
-      "summary": "Morphometric and character coding for Paleozoic trilobite disparity studies.",
-      "highlights": [
-        "Cleaned, stained, and photographed dozens of mm-scale eodiscid trilobites.",
-        "Measured and coded discrete morphological traits.",
-        "Contributed to macroevolutionary datasets for use in biostratigraphy."
-      ]
-    },
-    {
-      "organization": "Sereno Fossil Lab, University of Chicago",
-      "position": "Research & Outreach Volunteer",
-      "location": "Chicago, IL",
-      "startDate": "2021-09-30",
-      "endDate": "2024-12-15",
-      "summary": "Supported fossil preparation, collections work, and outreach in vertebrate paleontology, with additional field experience.",
-      "highlights": [
-          "Prepared, stabilized vertebrate fossil specimens using established lab techniques.",
-          "Participated in fieldwork in Morrison, Cloverly formations at base of Bighorn Mountains, assisting with excavation, handling, and documentation of fossil material.",
-          "Contributed to collections care, cataloging, and rehousing of specimens.",
-          "Created paleoart and illustrations to support science communication and education, in addition to creating visualizations, diagrams, and casts for display, outreach, and donor gifts.",
-          "Engaged with the public during lab tours, presenting fossil preparation methods and evolutionary context."
-      ]
-    },
-    {
-      "name": "UChicago Housing & Residence Life",
-      "position": "Resident Assistant",
-      "url": "https://housing.uchicago.edu/",
-      "location": "Chicago, IL",
-      "startDate": "2023-09-15",
-      "endDate": "2025-06-07",
-      "summary": "Community leadership and student support.",
-      "highlights": [
-        "Mentored 90+ residents; coordinated programming and crisis response.",
-        "Mediated conflicts and facilitated an inclusive residential environment."
-      ]
-    },
-    {
-      "organization": "Deep Skies Lab",
-      "position": "Undergraduate Researcher (Computational Astrophysics)",
-      "location": "Remote",
-      "startDate": "2021-06-01",
-      "endDate": "2022-12-31",
-      "summary": "Contributed to computational cosmology research with a focus on CMB datasets, applying statistical and machine learning methods in an international collaboration.",
-      "highlights": [
-        "Utilized simulation-based-inference to analyze the relationships between cosmological constraints, dark matter halos in galaxy clusters, and the observed SZ effect in the cosmic microwave background.",
-        "Applied regression and classification techniques in Python (NumPy, pandas, scipy, astropy, matplotlib, Keras)",
-        "Participated in presentation of research to members of Deep Skies and Fermilab.",
-        "Adapted experience with Bayesian and computational pipelines to later paleobiological modeling of evolutionary systems."
-      ]
-    }
-  ],
-
   "education": [
     {
-      "institution": "University of Chicago",
+      "institution": "The University of Chicago",
       "location": "Chicago, IL",
       "url": "https://www.uchicago.edu/",
-      "area": "Geophysical Sciences",
-      "studyType": "B.S.",
+      "area": "Geophysical Sciences, Minor: Astrophysics",
+      "studyType": "Bachelor of Sciences",
       "startDate": "2021-09-20",
       "endDate": "2025-06-07",
+      "dateText": "Jun. 2025",
       "GPA": "3.4/4.0",
       "courses": [
-        "Paleontology & Evolution: Phylogenetics and the Fossil Record",
-        "Paleontology & Evolution: Invertebrate Paleobiology and Evolution",
-        "Paleontology & Evolution: Biological Evolution – Advanced",
-        "Paleontology & Evolution: Geobiology",
-        "Paleontology & Evolution: Earth History",
-        "Paleontology & Evolution: Dinosaur Science",
-        "Paleontology & Evolution: Biodiversity",
-        "Quantitative & Modeling: Intro to Python for Astrostatistics",
-        "Quantitative & Modeling: Computational Techniques in Astrophysics",
-        "Quantitative & Modeling: Global Biogeochemical Cycles",
-        "Planetary & Astrophysics: What Makes a Planet Habitable?",
-        "Planetary & Astrophysics: Origin and Evolution of the Solar System",
-        "Planetary & Astrophysics: Intro to Astrophysics"
+        "Cumulative GPA: 3.4/4.0",
+        "Course Highlights: Intro. To Python Prog. w/ Appl. to Astro Statistics, Phylogenetics, Biodiversity, Biogeochemical Cycles, Geobiology",
+        "Awards, Honors, Other: QuestBridge NCM Finalist, Odyssey Scholar, National Merit Scholar. Honors in Major."
       ]
     }
   ],
 
-  "awards": [
+  "work": [
     {
-      "title": "Odyssey Scholar",
-      "awarder": "University of Chicago",
-      "startDate": "2021-09-20",
-      "endDate": "2025-06-07"
-    },
-    {
-      "title": "QuestBridge Scholar",
-      "awarder": "QuestBridge",
-      "startDate": "2021-09-20",
-      "endDate": "2025-06-07"
-    },
-    {
-      "title": "National Merit Scholar",
-      "awarder": "National Merit Scholarship Corporation",
-      "startDate": "2021-09-20",
-      "endDate": "2025-06-07"
-    }
-  ],
-
-  "publications": [
-    {
-      "title": "Quantitative analysis of multivariate diet clarifies ecological diversity of mammalian herbivores ",
-      "publisher": "SICB Presentation",
-      "releaseDate": "2026-01-06",
-      "url": "https://www.xcdsystem.com/sicb/program/ddC9FQp/index.cfm?pgid=2696&sid=50785&abid=166339",
-      "summary": "Quantitative means of estalbishing rank-matrix of ecological trait data of mammalian herbivores for use in predictive Bayesian analyses"
-    },
-    {
-      "name": "University of Chicago — Honors Thesis",
-      "title": "A Reanalysis of Recent Pterosaur Phylogenies through Parsimony and the Bayesian FBD Process",
+      "name": "Slater Lab - Multivariate Ecology on Mammalian Herbivores",
+      "position": "Research Assistant",
       "url": "https://geosci.uchicago.edu/",
       "location": "Chicago, IL",
-      "startDate": "2023-06-01",
-      "endDate": "2025-06-07",
-      "summary": "Comparative phylogenetic workflows in RevBayes/TNT with evaluation of stratigraphic congruence.",     
+      "startDate": "2024-06-01",
+      "dateText": "Jun. 2024 - Current",
       "highlights": [
-        "Performed an informal literature review of pterosaur crest morphology and phylogeny, particularly that of problem clades (anurognathidae), and quantitatively analyzed public morphological datasets.",
-        "Parsimony- and Bayesian-based trees were produced from these same datasets and compared with the goal of finding a consensus result amidst consistently competing hypotheses.",
-        "Evaluated stratigraphic congruence (e.g., GER, MSM*, RCI) and visualized uncertainty.",
-        "Gained experience in comparative cladistics and with popular paleontology packages like ape, strap, phytools, as well as programs like RevBayes, PAUP, TNT, and Mesquite.",
-        "Integrated data cleaning, version control, and figure generation (Python/R)."
+        "Developed computational pipelines, structured datasets, and informed models for comparative ecology and phylogenetic research",
+        "Herbivory: Built literature review and data-extraction workflows to characterize diet in mammalian herbivores as a multivariate ecological trait for use in predictive models using dental morphology; applied PCA and clustering analyses to identify different subniches and specialist guilds",
+        "Pterosaur Phylogeny: Compared morphological datasets and phylogenetic methods using parsimony, Bayesian inference, and fossil occurrence data to investigate persistent topological disagreements; developed scripts for PBDB, tree processing, and cross-dataset analysis"
       ]
-    }
-  ],
-
-  "projects": [
-    {
-      "name": "PBDB Fossil Data Pipeline",
-      "summary": "Python tools for querying, cleaning, and stratigraphically binning Paleobiology Database occurrences.",
-      "highlights": [
-        "Implemented taxonomic reconciliation and data cleaning workflows for PBDB occurrence data.",
-        "Developed configurable filters and stratigraphic binning for specimen- and occurrence-level analyses.",
-        "Designed pipeline for reuse in macroevolutionary and ecological analyses."
-      ],
-      "startDate": "2022-01-01",
-      "endDate": "2023-12-31",
-      "url": ""
     },
     {
-      "name": "Scientific Illustration & Paleoart",
-      "summary": "Digital and traditional media for communicating paleobiology and earth history.",
-      "highlights": [
-        "Produced scientific illustrations of taxa and reconstructed ecosystems in digital and traditional media.",
-        "Created visuals for outreach, education, and research communication"
-      ],
-      "startDate": "2019-01-01",
-      "url": "https://jhyoussef.github.io/"
-    },
-    {
-      "name": "Severn Fellows Project",
-      "location": "Severna Park, MD",
-      "startDate": "2020-05-01",
-      "endDate": "2021-05-01",
-      "summary": "Funded independent fellowship project integrating paleontological research with scientific art.",
-      "highlights": [
-        "Drafted and proposed an independent research project on theropod dinosaurs, including budgeting and planning.",
-        "Researched phylogeny, ecology, appearance, and anatomy of multiple theropod species.",
-        "Produced paleoart and a series of illustrated, data-informed pages for science communication."
-      ]
-    }
-  ],
-
-  "volunteer": [
-    {
-      "name": "Phoenix Farms",
-      "position": "Volunteer",
+      "name": "PhoenixFarms NFP",
+      "position": "Board Member",
       "url": "https://www.phoenixfarmschicago.org/",
       "location": "Chicago, IL",
-      "summary": "A non-for-profit organization focused on establishing food forests in the Woodlawn, Hyde Park, and Washington Park areas"
+      "startDate": "2026-05-01",
+      "dateText": "May 2026 - Current",
+      "highlights": [
+        "Contribute to development and maintenance of a community Food Forest supplying produce to local food pantry",
+        "Planned grant-funded planting of 12 fruit and nut trees, developing an ecologically informed site-plan based on canopy size, light, species interactions, and long-term management",
+        "Built site infrastructure and created public-facing FAQs for community partners and volunteers"
+      ]
+    },
+    {
+      "name": "Sereno Fossil Lab",
+      "position": "Volunteer, Summer Student Lab Technician",
+      "url": "https://paulsereno.uchicago.edu/",
+      "location": "Chicago, IL",
+      "startDate": "2021-09-01",
+      "dateText": "Sept. 2021 - Dec. 2024, Summer Tech Jun. - Aug. 2023, Jul. 2026 - Current",
+      "highlights": [
+        "Prepared fossil vertebrate specimens, as well as creating visualizations, diagrams, and casts for display, outreach, and donor gifts",
+        "Participated in small, week-long expedition to exposed Morrison, Cloverly formations at base of Bighorn Mountains, involving excavating and stabilizing dinosaur fossils (Camarasaurus vertebra)"
+      ]
+    },
+    {
+      "name": "Eodiscid Trilobite Fossil Processing & Morphological Analysis",
+      "position": "Metcalf Intern",
+      "url": "https://geosci.uchicago.edu/",
+      "location": "Chicago, IL",
+      "startDate": "2024-02-01",
+      "endDate": "2024-09-30",
+      "dateText": "Feb. 2024 - Sept. 2024",
+      "highlights": [
+        "Cleaned, stained, and photographed dozens of mm-scale eodiscid trilobites for morphological analysis and use in biostratigraphy"
+      ]
+    },
+    {
+      "name": "Liew House Dorm Resident Assistant",
+      "position": "Senior RA as of Sept. 2024",
+      "url": "https://housing.uchicago.edu/",
+      "location": "Chicago, IL",
+      "startDate": "2023-09-01",
+      "endDate": "2025-06-30",
+      "dateText": "Sept. 2023 - June 2025",
+      "highlights": [
+        "Fostered a positive living environment for residents, resolving conflicts, and organizing social events; built staff shift schedules"
+      ]
+    },
+    {
+      "name": "Deep Skies Lab",
+      "position": "Metcalf Intern",
+      "url": "https://deepskieslab.com/",
+      "location": "Chicago, IL",
+      "startDate": "2023-02-01",
+      "endDate": "2023-10-31",
+      "dateText": "Feb. 2023 - Oct. 2023",
+      "highlights": [
+        "Utilized simulation-based-inference to analyze the relationships between cosmological constraints, dark matter halos in galaxy clusters, and the observed SZ effect in the cosmic microwave background",
+        "Used regression and classification machine learning techniques in cosmological and astrophysical applications; presented research to Deep Skies collaborators and Fermilab"
+      ]
     },
     {
       "name": "UChicago Paleontology Club",
-      "position": "President",
+      "position": "Board Member, Co-President",
       "url": "https://studentorganizations.uchicago.edu/",
       "location": "Chicago, IL",
-      "startDate": "2023-09-01",
-      "endDate": "2025-06-07",
-      "summary": "Student leadership and outreach in paleontology.",
+      "startDate": "2022-12-01",
+      "endDate": "2025-06-30",
+      "dateText": "Dec. 2022 - June 2025",
       "highlights": [
-        "Organized talks, field trips, and annual events.",
-        "Coordinated guest speakers and museum collaborations."
+        "Club fosters a community of paleontologists, enthusiasts by developing an online presence, hosting talks, and leading workshops"
       ]
     }
   ],
 
   "skills": [
     {
-      "name": "Programming & Tools",
-      "level": "Intermediate",
+      "name": "Technical",
       "keywords": [
-        "Python (pandas, matplotlib, scikit-learn)",
-        "R (phytools, tidyverse)",
+        "Python",
+        "R",
+        "GitHub",
         "RevBayes",
+        "PAUP*",
         "TNT",
-        "Git",
-        "Mesquite"
-      ]
-    },
-    {
-      "name": "Methods",
-      "keywords": [
-        "Bayesian phylogenetics",
-        "Simulation-based inference",
-        "Morphometrics",
+        "Phylogenetic analysis",
+        "Data processing",
         "Fossil preparation",
-        "Specimen light-scanning & processing"
-      ]
-    },
-    {
-      "name": "Software",
-      "keywords": [
-        "Microsoft Office (Powerpoint, Word, Excel)",
-        "Adobe (Photoshop, Illustrator)",
-        "LaTeX"
-      ]
-    },
-    {
-      "name": "Art",
-      "keywords": [
-        "Scientific illustration (digital & traditional)",
-        "Soft pastel",
-        "Pencil & pen",
-        "Digital painting"
+        "Specimen preparation, scanning & processing.",
+        "Adobe Photoshop, Illustrator",
+        "Microsoft Office & Google Workspace"
       ]
     }
   ],
 
-  "languages": [
-    { "language": "English", "fluency": "Fluent" }
-  ],
-
   "interests": [
-    { "name": "Reading" },
-    { "name": "Scientific Illustration" },
-    { "name": "Rock Climbing" },
-    { "name": "Gardening" },
-    { "name": "Religious Syncretism in Antiquity"}
+    { "name": "Art & Scientific Illustration (soft pastel,, pencil, paints, digital)" },
+    { "name": "Rockclimbing & Running," },
+    { "name": "Competitive Ballroom and Latin Dance" },
+    { "name": "Plants & Gardening" },
+    { "name": "Religious Syncretism in Antiquity" }
   ]
 }
