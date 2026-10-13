@@ -6,7 +6,7 @@ date: '2026-9-11 10:00:00 -0500'
 date_label:
 description: 
 status: reading
-tags: reading-note
+tags: reading-notes
 thumbnail: 
 toc: false
 featured: false
