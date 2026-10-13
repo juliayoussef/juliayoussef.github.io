@@ -8,7 +8,7 @@ nav_order: 2
 
 <div class="post writings-page">
   {% assign all_posts = site.posts | sort: "date" | reverse %}
-  {% assign writing_posts = all_posts | where_exp: "post", "post.path contains '_posts/writings/'" %}
+  {% include writing_posts.liquid %}
   {% assign snippet_posts = all_posts | where_exp: "post", "post.path contains '_posts/snippets/'" %}
   {% assign featured_posts = writing_posts | where: "featured", true %}
   {% assign writings_per_page = 4 %}
@@ -110,23 +110,22 @@ nav_order: 2
           <h2 class="home-section-title">writings</h2>
 
           {% if essay_tags.size > 0 %}
-            <div class="tag-category-list writings-tag-list">
+            <div class="writings-tag-list">
               <ul class="p-0 m-0">
                 {% for tag in essay_tags %}
                   {% if tag != "" %}
                     <li>
-                      <i class="fa-solid fa-hashtag fa-sm"></i>
                       <button
                         type="button"
                         class="writings-tag-filter"
                         data-tag-filter="{{ tag | escape }}"
                         aria-pressed="false"
                       >
-                        {{ tag }}
+                        # {{ tag }}
                       </button>
                     </li>
                     {% unless forloop.last %}
-                      <p>&bull;</p>
+                      <li class="writings-tag-separator" aria-hidden="true">&middot;</li>
                     {% endunless %}
                   {% endif %}
                 {% endfor %}

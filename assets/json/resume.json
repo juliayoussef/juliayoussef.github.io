@@ -4,9 +4,9 @@
     "label": "Geophysical Sciences graduate",
     "image": "/assets/img/prof_pic.jpg",
     "email": "juliayoussef@outlook.com",
-    "phone": "(443) 422-8015",
+    "phone": "443-422-8015",
     "url": "https://juliayoussef.github.io/",
-    "summary": "Recent UChicago Geophysical Sciences graduate with experience in paleontology, quantitative ecology, computational research, and scientific communication. Skilled in analyzing complex biological datasets, developing research workflows, and working with museum and fossil specimens.",
+    "summary": "Geophysical Sciences graduate focused on quantitative paleobiology, macroevolution, and ecological niche evolution through time; integrating morphological, ecological, and stratigraphic data; scientific communication and visualization",
     "location": {
       "city": "Chicago",
       "region": "Illinois",
@@ -20,13 +20,12 @@
       }
     ]
   },
-
   "education": [
     {
       "institution": "The University of Chicago",
       "location": "Chicago, IL",
       "url": "https://www.uchicago.edu/",
-      "area": "Geophysical Sciences, Minor: Astrophysics",
+      "area": "Geophysical Sciences, Honors in Major. Minor: Astronomy & Astrophysics",
       "studyType": "Bachelor of Sciences",
       "startDate": "2021-09-20",
       "endDate": "2025-06-07",
@@ -34,37 +33,41 @@
       "GPA": "3.4/4.0",
       "courses": [
         "Cumulative GPA: 3.4/4.0",
-        "Course Highlights: Intro. To Python Prog. w/ Appl. to Astro Statistics, Phylogenetics, Biodiversity, Biogeochemical Cycles, Geobiology",
-        "Awards, Honors, Other: QuestBridge NCM Finalist, Odyssey Scholar, National Merit Scholar. Honors in Major."
+        "Coursework Highlights: Phylogenetics in the Fossil Record, Biodiversity, Global Biogeochemical Cycles, Geobiology, Comparative Vertebrate Anatomy, Invertebrate Paleobiology & Evolution",
+        "Honors & Scholarships: QuestBridge NCM Finalist, Odyssey Scholar, National Merit Scholar"
       ]
     }
   ],
-
   "work": [
     {
-      "name": "Slater Lab - Multivariate Ecology on Mammalian Herbivores",
+      "name": "Slater Lab",
       "position": "Research Assistant",
       "url": "https://geosci.uchicago.edu/",
       "location": "Chicago, IL",
       "startDate": "2024-06-01",
       "dateText": "Jun. 2024 - Current",
-      "highlights": [
-        "Developed computational pipelines, structured datasets, and informed models for comparative ecology and phylogenetic research",
-        "Herbivory: Built literature review and data-extraction workflows to characterize diet in mammalian herbivores as a multivariate ecological trait for use in predictive models using dental morphology; applied PCA and clustering analyses to identify different subniches and specialist guilds",
-        "Pterosaur Phylogeny: Compared morphological datasets and phylogenetic methods using parsimony, Bayesian inference, and fossil occurrence data to investigate persistent topological disagreements; developed scripts for PBDB, tree processing, and cross-dataset analysis"
-      ]
-    },
-    {
-      "name": "PhoenixFarms NFP",
-      "position": "Board Member",
-      "url": "https://www.phoenixfarmschicago.org/",
-      "location": "Chicago, IL",
-      "startDate": "2026-05-01",
-      "dateText": "May 2026 - Current",
-      "highlights": [
-        "Contribute to development and maintenance of a community Food Forest supplying produce to local food pantry",
-        "Planned grant-funded planting of 12 fruit and nut trees, developing an ecologically informed site-plan based on canopy size, light, species interactions, and long-term management",
-        "Built site infrastructure and created public-facing FAQs for community partners and volunteers"
+      "projects": [
+        {
+          "name": "Pterosaur Phylogenetics – manuscript in progress",
+          "highlights": [
+            "Investigated whether persistent disagreements among pterosaur phylogenetic hypotheses produced by semi-independent datasets persist when reanalyzed under standardized parsimony and Bayesian approaches",
+            "Designed analysis workflow that restructures and standardizes published morphological datasets, relates taxa with PBDB occurrence records for use in tip-dated tree models or stratigraphic metric measures and processes resulting tree samples for reproducible cross-dataset and cross-method comparisons",
+            "Developed robust TNT tree-search script and specified model assumptions, prior distributions, and analysis settings for RevBayes",
+            "Quantified changes in topological agreement across dataset x method combinations using pairwise Generalized Robinson-Foulds distances (following Llabres et al. 2023), visualized in tree space; stratigraphic congruence metrics used as complementary measure",
+            "Generated representative median trees by minimizing Kendall-Colijn distances to compare the specific clade arrangements across dataset x method combinations"
+          ]
+        },
+        {
+          "name": "Quantitative Ecology of Mammalian Herbivores",
+          "highlights": [
+            "Investigated how mammalian diet can be represented as a multivariate ecological trait for cross-taxon comparison, beyond broad browser—grazer or herbivory—carnivory continua.",
+            "Constructed dietary classes to capture variation in consumed items across primary ecological studies on mammalian herbivores, manually scoring ~100 studies spanning ~30 taxa into a ranked diet matrix; applied polychoric PCA and Jaccard clustering to evaluate whether the resultant structure resembled intuitive consumer dietary guilds",
+            "Compiled and minimally standardized author-reported dietary items for use in correspondence analysis, identifying both rare and commonly used dietary terms and producing an alternative representation of taxon dietary niches.",
+            "Identified limitations in comparing dietary niches in extant herbivores arising from heterogeneous terminology, measurements, author-defined food categories, and inconsistent reporting of ecological context and dietary item importance",
+            "Developing a structured ecological-data framework for manual- and “human-in-the-loop” AI-assisted literature extraction, formatting taxon, dietary item, qualifiers, and source evidence into standardized versions for cross-study or downstream comparative analyses",
+            "Extending this framework, characterizing diet as a multivariate ecological trait for use in inference with dental morphology across extant and fossil mammals"
+          ]
+        }
       ]
     },
     {
@@ -73,22 +76,52 @@
       "url": "https://paulsereno.uchicago.edu/",
       "location": "Chicago, IL",
       "startDate": "2021-09-01",
-      "dateText": "Sept. 2021 - Dec. 2024, Summer Tech Jun. - Aug. 2023, Jul. 2026 - Current",
+      "dateText": "Sep. 2021 – Dec. 2024, Summer Tech Jun. – Aug. 2023, Jul. 2026 – Current",
       "highlights": [
-        "Prepared fossil vertebrate specimens, as well as creating visualizations, diagrams, and casts for display, outreach, and donor gifts",
-        "Participated in small, week-long expedition to exposed Morrison, Cloverly formations at base of Bighorn Mountains, involving excavating and stabilizing dinosaur fossils (Camarasaurus vertebra)"
+        "Prepped fossil vertebrate specimens using traditional tools (airscribes, picks) and stabilization techniques (B72); assisted with lab organization, fossil packing, and cataloging",
+        "Participated in small, week-long expedition to exposed Morrison, Cloverly formations at base of Bighorn Mountains, involving excavating and stabilizing dinosaur fossils (Camarasaurus vertebra)",
+        "Assisted with public-facing lab activities and open houses following lab move; painted and helped sculpt models and casts for display, outreach, and donor gifts."
       ]
     },
     {
-      "name": "Eodiscid Trilobite Fossil Processing & Morphological Analysis",
+      "name": "Webster Lab",
       "position": "Metcalf Intern",
       "url": "https://geosci.uchicago.edu/",
       "location": "Chicago, IL",
       "startDate": "2024-02-01",
       "endDate": "2024-09-30",
-      "dateText": "Feb. 2024 - Sept. 2024",
+      "dateText": "Feb. 2024 – Sep. 2024",
       "highlights": [
-        "Cleaned, stained, and photographed dozens of mm-scale eodiscid trilobites for morphological analysis and use in biostratigraphy"
+        "Performed delicate cleaning, staining, mounting, and photography of dozens of fragile, siliceous, mm-scale eodiscid trilobite cranidia for use in geometric morphometric and biostratigraphic analyses"
+      ],
+      "summary": "Eodiscid Trilobite Fossil Processing"
+    },
+    {
+      "name": "Deep Skies Lab",
+      "position": "Metcalf Intern",
+      "url": "https://deepskieslab.com/",
+      "location": "Chicago, IL",
+      "startDate": "2023-02-01",
+      "endDate": "2023-10-31",
+      "dateText": "Feb. 2023 – Oct. 2023",
+      "highlights": [
+        "Contributed to collaborative simulation-based-inference project relating cosmological parameters, dark matter halos in galaxy clusters, and observed thermal SZ effects in the Cosmic Microwave Background",
+        "Developed and tested regression, classification, and generally machine learning techniques for simulated astrophysical data; presented project methods and rationale to Deep Skies collaborators and Fermilab researchers"
+      ]
+    }
+  ],
+  "community": [
+    {
+      "name": "Phoenix Farms NFP",
+      "position": "Board Member",
+      "url": "https://www.phoenixfarmschicago.org/",
+      "location": "Chicago, IL",
+      "startDate": "2026-05-01",
+      "dateText": "May 2026 - Current",
+      "highlights": [
+        "Contribute to development and maintenance of a community food forest supplying produce to the local community",
+        "Designed an ecologically-informed site layout for grant-funded planting of 12 fruit and nut trees based on canopy size, light, species interactions, and long-term management; collaborating with plot owners to work around constraints",
+        "Built site infrastructure and created public-facing FAQs for community partners and volunteers"
       ]
     },
     {
@@ -98,22 +131,10 @@
       "location": "Chicago, IL",
       "startDate": "2023-09-01",
       "endDate": "2025-06-30",
-      "dateText": "Sept. 2023 - June 2025",
+      "dateText": "Sep. 2023 – Jun. 2025",
       "highlights": [
-        "Fostered a positive living environment for residents, resolving conflicts, and organizing social events; built staff shift schedules"
-      ]
-    },
-    {
-      "name": "Deep Skies Lab",
-      "position": "Metcalf Intern",
-      "url": "https://deepskieslab.com/",
-      "location": "Chicago, IL",
-      "startDate": "2023-02-01",
-      "endDate": "2023-10-31",
-      "dateText": "Feb. 2023 - Oct. 2023",
-      "highlights": [
-        "Utilized simulation-based-inference to analyze the relationships between cosmological constraints, dark matter halos in galaxy clusters, and the observed SZ effect in the cosmic microwave background",
-        "Used regression and classification machine learning techniques in cosmological and astrophysical applications; presented research to Deep Skies collaborators and Fermilab"
+        "Supported a residential community of ~100 students through weekly social programming, conflict mediation, crisis handling, and coordination with Resident Heads and housing staff",
+        "Constructed and coordinated staff on-call schedules under coverage and availability constraints as Senior RA"
       ]
     },
     {
@@ -123,13 +144,13 @@
       "location": "Chicago, IL",
       "startDate": "2022-12-01",
       "endDate": "2025-06-30",
-      "dateText": "Dec. 2022 - June 2025",
+      "dateText": "Dec. 2022 – Jun. 2025",
       "highlights": [
-        "Club fosters a community of paleontologists, enthusiasts by developing an online presence, hosting talks, and leading workshops"
+        "Fostered a community of paleontologists & enthusiasts by developing an online presence, hosting talks, and leading workshops",
+        "Coordinated club admin, accounts, and planning, including with collaborations with other student organizations"
       ]
     }
   ],
-
   "skills": [
     {
       "name": "Technical",
@@ -140,21 +161,44 @@
         "RevBayes",
         "PAUP*",
         "TNT",
-        "Phylogenetic analysis",
-        "Data processing",
-        "Fossil preparation",
+        "IQTree3",
+        "Phylogenetic analysis, data processing",
         "Specimen preparation, scanning & processing.",
-        "Adobe Photoshop, Illustrator",
-        "Microsoft Office & Google Workspace"
+        "Adobe Photoshop, Illustrator"
       ]
     }
   ],
-
   "interests": [
-    { "name": "Art & Scientific Illustration (soft pastel,, pencil, paints, digital)" },
-    { "name": "Rockclimbing & Running," },
-    { "name": "Competitive Ballroom and Latin Dance" },
-    { "name": "Plants & Gardening" },
-    { "name": "Religious Syncretism in Antiquity" }
+    {
+      "name": "Art & Scientific Illustration (soft pastel, pencil, paint, ink, digital)"
+    },
+    {
+      "name": "Rock Climbing & Running"
+    },
+    {
+      "name": "Competitive Ballroom & Latin Dance"
+    },
+    {
+      "name": "Plants & Gardening"
+    },
+    {
+      "name": "Religious Syncretism & Development in Late Antiquity"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Quantitative Analysis of Multivariate Diet Clarifies Ecological Diversity of Mammalian Herbivores.",
+      "authors": "Youssef, J., Martinez, S., Wisniewski, A., Nations, J., & Slater, G.",
+      "publisher": "Society for Integrative and Comparative Biology Annual Meeting",
+      "releaseDate": "2026",
+      "summary": "Oral presentation."
+    },
+    {
+      "name": "A Reanalysis of Recent Pterosaur Phylogenies through Parsimony and the Bayesian Fossilized Birth–Death Process.",
+      "authors": "Youssef, J.",
+      "publisher": "University of Chicago Undergraduate Research Symposium",
+      "releaseDate": "2025",
+      "summary": "Oral presentation"
+    }
   ]
 }

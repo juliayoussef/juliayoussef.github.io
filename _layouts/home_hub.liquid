@@ -92,7 +92,8 @@ layout: default
         <h2 class="home-section-title">latest posts</h2>
 
         {% assign latest_writings_count = 0 %}
-        {% assign latest_writing_posts = site.posts | where_exp: "post", "post.path contains '_posts/writings/'" %}
+        {% include writing_posts.liquid %}
+        {% assign latest_writing_posts = writing_posts %}
         {% for post in latest_writing_posts %}
             <div class="card mb-3 hoverable home-writing-card{% unless post.thumbnail %} home-writing-card--no-thumb{% endunless %}">
               {% if post.thumbnail %}

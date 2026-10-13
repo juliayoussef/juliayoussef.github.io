@@ -844,7 +844,29 @@
 
 .writings-tag-list {
   border-bottom: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.writings-tag-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.55rem;
+  align-items: center;
+}
+
+.writings-tag-list li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.writings-tag-separator {
+  margin: 0 0.45rem;
+  opacity: 0.7;
 }
 
 .writings-feed-section .home-section-title {
@@ -859,6 +881,8 @@
   padding: 0.35rem 0.7rem;
   color: var(--global-theme-color);
   cursor: pointer;
+  font: inherit;
+  text-decoration: none;
   line-height: 1.1;
   transition:
     background-color 0.15s ease,

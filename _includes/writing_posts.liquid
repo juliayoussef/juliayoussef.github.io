@@ -1,0 +1,7 @@
+{%- comment -%}
+  Book notes remain in About's book lists. Add the reading-notes tag to also
+  include a book note in Writings and latest posts, using the same post URL.
+{%- endcomment -%}
+{%- assign writing_posts = site.posts | where_exp: "post", "post.path contains '_posts/writings/'" -%}
+{%- assign reading_note_posts = site.posts | where_exp: "post", "post.path contains '_posts/book-notes/'" | where_exp: "post", "post.tags contains 'reading-notes'" -%}
+{%- assign writing_posts = writing_posts | concat: reading_note_posts | sort: "date" | reverse -%}

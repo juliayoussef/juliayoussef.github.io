@@ -1,6 +1,7 @@
 <div class="news">
   {% if page.latest_posts != blank %}
-    {% assign latest_posts = site.posts | where_exp: "post", "post.path contains '_posts/writings/'" %}
+    {% include writing_posts.liquid %}
+    {% assign latest_posts = writing_posts %}
     {% assign latest_posts_size = latest_posts | size %}
     <div
       class="table-responsive"

@@ -38,7 +38,11 @@ layout: default
         <div class="card mt-3 p-3">
           {% assign section_title = data[0] | capitalize %}
           {% if data[0] == 'work' %}
-            {% assign section_title = 'Research & Experience' %}
+            {% assign section_title = 'Experience & Research' %}
+          {% elsif data[0] == 'community' %}
+            {% assign section_title = 'Community & Outreach' %}
+          {% elsif data[0] == 'publications' %}
+            {% assign section_title = 'Presentations & Publications' %}
           {% endif %}
           <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
           <div>
@@ -47,7 +51,7 @@ layout: default
                 {% include resume/basics.liquid %}
               {% when 'education' %}
                 {% include resume/education.liquid %}
-              {% when 'work' %}
+              {% when 'work', 'community' %}
                 {% include resume/work.liquid %}
               {% when 'volunteer' %}
                 {% include resume/volunteer.liquid %}
