@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Musings on the Gender & War in Le Guin's The Left Hand of Darkness
+title: The Left Hand of Darkness
 date: '2026-06-25 10:00:00 -0500'
 description: Thoughts on my recent read of Le Guin's work, and considerations on the question of human's tendency to war
 status: read
